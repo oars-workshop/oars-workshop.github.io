@@ -120,7 +120,13 @@
                     <h2 class="section-heading">Introduction</h2>
                     <div class="row text-justify">
                         <p class="large text-muted">The KDD workshop on online and adaptative recommender systems (OARS) will serve as a platform for publication and discussion of OARS. This workshop will bring together practitioners and researchers from academia and industry to discuss the challenges and approaches to implement OARS algorithms and systems, and improve user experiences by better modeling and responding to user’s intent.</p>
-
+                        <p class="large text-muted">Many recommender systems deployed in the real world rely on categorical user-profiles and/or pre-calculated recommendation actions that stay static during a user session. Recent trends suggest that recommender systems should model user intent in real time and constantly adapt to meet user needs at the moment or change user behavior in situ. In addition, various techniques have been proposed to help recommender systems adapt to new users, items, or interactions. Some strategies to build “adaptive” recommenders include:</p>
+                        <ul class="large text-muted">
+                            <li>Systems for online training, e.g. updating the parameters of a pre-trained model to a new user.</li>        
+                            <li>Feature-based systems that handle cold-start scenarios, and can gracefully adapt to a combination of cold- and warm users/items.</li>
+                            <li>Systems that avoid modeling users at all (e.g. session-based recommenders that directly learn from item interactions without needing user terms)</li>
+                            <li>Systems that adapt to new interactions through RL or other adaptive learning algorithms.</li>
+                        </ul>
                         <p class="large text-muted">We invite submission of papers and posters of two to ten pages (including references), representing original research, preliminary research results, proposals for new work, position, and opinion papers. All submitted papers and posters will be single-blind and will be peer reviewed by an international program committee of researchers of high repute.  Accepted submissions will be presented at the workshop.</p>
 
                         <p class="large text-muted">Topics of interest include, but are not limited to: </p>
