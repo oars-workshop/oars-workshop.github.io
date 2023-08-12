@@ -302,7 +302,16 @@
                     <!-- <h3 class="section-subheading text-muted">Details Will Come Soon...</h3>-->
                 </div>
             </div>
-
+            <script>
+              function myFunction(id) {
+                var x = document.getElementById(id);
+                if (x.style.display === "none") {
+                  x.style.display = "block";
+                } else {
+                  x.style.display = "none";
+                }
+              }
+            </script>
             <div class="row">
               <div class="col-lg-12 text-left">
                   
@@ -316,85 +325,101 @@
                   </td><td class="tg-yw4l">Openning</td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">1:10-1:50 PT<td class="tg-yw4l">Invited Talk 1<br><font color=#00008B>Large Language Models for Generative Recommendation</font><br>Yongfeng Zhang, Rutgers University<br>The boom of Generative AI driven by Foundation Models such as large language models has brought a paradigm shift for recommender systems. Instead of traditional multi-stage filtering and matching-based recommendation, it now becomes possible to do straightforward single-stage recommendation by directly generating the recommended items based on user’s personalized inputs. This paradigm shift not only brings increased recommendation accuracy, but also improves the efficiency through single-stage recommendation, and enables better controllability for users based on natural language prompts. This talk with introduce generative recommendation from various perspectives, including large language models for recommendation, item representation, multi-modal recommendation, prompt generation, as well as the explainability and fairness of large language models in recommendation.</td>
+                  <td class="tg-yw4l">1:10-1:50 PT</td>
+                  <td class="tg-yw4l">Invited Talk 1<br><font color=#00008B>Large Language Models for Generative Recommendation</font> [<a style="color:#00008b;" href="#!" target="_blank">slides</a>]
+                    <br>Yongfeng Zhang, Rutgers University<br>The boom of Generative AI driven by Foundation Models such as large language models has brought a paradigm shift for recommender systems. Instead of traditional multi-stage filtering and matching-based recommendation, it now becomes possible to do straightforward single-stage recommendation by directly generating the recommended items based on user’s personalized inputs. This paradigm shift not only brings increased recommendation accuracy, but also improves the efficiency through single-stage recommendation, and enables better controllability for users based on natural language prompts. This talk with introduce generative recommendation from various perspectives, including large language models for recommendation, item representation, multi-modal recommendation, prompt generation, as well as the explainability and fairness of large language models in recommendation.</td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">1:50-2:10 PT<td class="tg-yw4l">Contributed Talk 1<br><a href="tushar2023.pdf">Active Learning with a Budget to Rank Candidates Rated by Disjoint Assessors</a><br>Tushar Phule, Pragalbh Vashishtha and Arun Rajkumar</td>
+                  <td class="tg-yw4l">1:50-2:10 PT</td>
+                  <td class="tg-yw4l">Contributed Talk 1<br><a href="papers/tushar2023.pdf">Active Learning with a Budget to Rank Candidates Rated by Disjoint Assessors</a> 
+                    <br>Tushar Phule, Pragalbh Vashishtha and Arun Rajkumar 
+                    [<a style="color:#00008b;" href="#!" target="_blank">slides</a>]
+                    [<a style="color:#00008b;" href="#!" style="color:#F1C40F;" onclick='myFunction("paper_1")'><b>BibTex</a>]                    
+<a id="paper_1" style="display:none;white-space:pre-wrap;text-decoration:none">
+@inproceedings{kdd-oars2023_1,
+title={Active Learning with a Budget to Rank Candidates Rated by Disjoint Assessors},
+author={Tushar Phule, Pragalbh Vashishtha and Arun Rajkumar},
+bobooktitle={Proceedings of the 3rd International Workshop on Online and Adaptive Recommender Systems (OARS)},
+year={2023}
+}</a>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">2:10-2:30 PT<td class="tg-yw4l">Contributed Talk 2<br><a href="marko2023.pdf">Evaluating Federated Session-Based Recommender Systems</a><br>Marko Harasic, Dennis Lehmann, Adrian Paschke and Babak Mafakheri </td>
+                  <td class="tg-yw4l">2:10-2:30 PT</td>
+                  <td class="tg-yw4l">Contributed Talk 2<br><a href="papers/marko2023.pdf">Evaluating Federated Session-Based Recommender Systems</a> 
+                    <br>Marko Harasic, Dennis Lehmann, Adrian Paschke and Babak Mafakheri
+                    [<a style="color:#00008b;" href="slides/Marco2023_slides.odp" target="_blank"><b>slides</a>]
+                    [<a style="color:#00008b;" href="#!" style="color:#F1C40F;" onclick='myFunction("paper_2")'><b>BibTex</a>]                    
+<a id="paper_2" style="display:none;white-space:pre-wrap;text-decoration:none">
+@inproceedings{kdd-oars2023_2,
+title={Evaluating Federated Session-Based Recommender Systems},
+author={Marko Harasic, Dennis Lehmann, Adrian Paschke and Babak Mafakheri},
+bobooktitle={Proceedings of the 3rd International Workshop on Online and Adaptive Recommender Systems (OARS)},
+year={2023}
+}</a>
+                  </td> 
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">2:30-3:10 PT<td class="tg-yw4l">Invited Talk 3<br><font color=#00008B>Incremental Training, Session-based Recommendation, and System Level Approaches to Online Recommender Systems</font><br>Even Oldridge, NVIDIA<br>Recommendation scenarios like social networks and news are extremely dynamic in nature with user interests changing over time and new items being continuously added due to breaking news and trending events.  In order to deal with this situation the community has developed several techniques which address the problem of an ever changing user and item catalogue.  The NVIDIA Merlin team has developed a series of open source libraries which provide the capability for developing online recommender systems.  This talk will introduce some of these tools and highlight the experiments that we've done using them.</td>
+                  <td class="tg-yw4l">2:30-3:10 PT</td>
+                  <td class="tg-yw4l">Invited Talk 3<br><font color=#00008B>Incremental Training, Session-based Recommendation, and System Level Approaches to Online Recommender Systems</font> [<a style="color:#00008b;" href="#!" target="_blank">slides</a>]
+                    <br>Even Oldridge, NVIDIA<br>Recommendation scenarios like social networks and news are extremely dynamic in nature with user interests changing over time and new items being continuously added due to breaking news and trending events.  In order to deal with this situation the community has developed several techniques which address the problem of an ever changing user and item catalogue.  The NVIDIA Merlin team has developed a series of open source libraries which provide the capability for developing online recommender systems.  This talk will introduce some of these tools and highlight the experiments that we've done using them.</td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">3:10-3:50 PT<td class="tg-yw4l">Invited Talk 4<br><font color=#00008B>User Centric Recommender Systems</font><br>Tania Bedrax-Weiss, Google Research<br>User centric recommender systems must understand and meet genuine user needs and preferences using natural, unobtrusive, and transparent interaction.  In this talk, I will advocate how Language technologies, and more recently Large Language Models, can help enable these user centric recommender systems.   I will briefly outline the problems, solutions and outstanding challenges in understanding the user, creating rich user interactions, understanding the domain, and understanding the ecosystem, and give examples of these in Google products.</td>
+                  <td class="tg-yw4l">3:10-3:50 PT</td>
+                  <td class="tg-yw4l">Invited Talk 4<br><font color=#00008B>User Centric Recommender Systems</font> [<a style="color:#00008b;" href="#!" target="_blank">slides</a>] 
+                    <br>Tania Bedrax-Weiss, Google Research<br>User centric recommender systems must understand and meet genuine user needs and preferences using natural, unobtrusive, and transparent interaction.  In this talk, I will advocate how Language technologies, and more recently Large Language Models, can help enable these user centric recommender systems.   I will briefly outline the problems, solutions and outstanding challenges in understanding the user, creating rich user interactions, understanding the domain, and understanding the ecosystem, and give examples of these in Google products.</td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">3:50-4:10 PT<td class="tg-yw4l">Contributed Talk 3<br><a href="yachen2023.pdf">FLASH4Rec: A Lightweight and Sparsely Activated Transformer for User-Aware Sequential Recommendation</a><br>Yachen Yan and Liubo Li</td>
+                  <td class="tg-yw4l">3:50-4:10 PT</td>
+                  <td class="tg-yw4l">Contributed Talk 3<br><a href="papers/yachen2023.pdf">FLASH4Rec: A Lightweight and Sparsely Activated Transformer for User-Aware Sequential Recommendation</a> 
+                    <br>Yachen Yan and Liubo Li
+                    [<a style="color:#00008b;" href="slides/Yachen2023_slides.pdf" target="_blank"><b>slides</a>]
+                    [<a style="color:#00008b;" href="#!" style="color:#F1C40F;" onclick='myFunction("paper_3")'><b>BibTex</a>]                    
+<a id="paper_3" style="display:none;white-space:pre-wrap;text-decoration:none">
+@inproceedings{kdd-oars2023_3,
+title={FLASH4Rec: A Lightweight and Sparsely Activated Transformer for User-Aware Sequential Recommendation},
+author={Yachen Yan and Liubo Li},
+bobooktitle={Proceedings of the 3rd International Workshop on Online and Adaptive Recommender Systems (OARS)},
+year={2023}
+}</a>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">4:10-4:30 PT<td class="tg-yw4l">Contributed Talk 4<br><a href="verma2023.pdf">Empowering recommender systems using automatically generated Knowledge Graphs and Reinforcement Learning</a><br>Ghanshyam Verma, Simon Simanta, Huan Chen, Devishree Pillai, John P. McCrae, János A. Perge, Shovon Sengupta and Paul Buitelaar</td>
+                  <td class="tg-yw4l">4:10-4:30 PT</td>
+                  <td class="tg-yw4l">Contributed Talk 4<br><a href="papers/verma2023.pdf">Empowering recommender systems using automatically generated Knowledge Graphs and Reinforcement Learning</a> 
+                    <br>Ghanshyam Verma, Simon Simanta, Huan Chen, Devishree Pillai, John P. McCrae, János A. Perge, Shovon Sengupta and Paul Buitelaar
+                    [<a style="color:#00008b;" href="#!" target="_blank">slides</a>]
+                    [<a style="color:#00008b;" href="#!" onclick='myFunction("paper_4")'><b>BibTex</a>]
+                    
+<a id="paper_4" style="display:none;white-space:pre-wrap;text-decoration:none">
+@inproceedings{kdd-oars2023_4,
+title={Empowering recommender systems using automatically generated Knowledge Graphs and Reinforcement Learning},
+author={Ghanshyam Verma, Simon Simanta, Huan Chen, Devishree Pillai, John P. McCrae, János A. Perge, Shovon Sengupta and Paul Buitelaar},
+bobooktitle={Proceedings of the 3rd International Workshop on Online and Adaptive Recommender Systems (OARS)},
+year={2023}
+}</a>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">4:30-5:10 PT<td class="tg-yw4l">Invited Talk 2<br><font color=#00008B>Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs</font><br>Jiliang Tang, Michigan State University<br>Learning on Graphs has attracted immense attention due to its wide real-world applications such as recommender systems. The most popular pipeline for learning on graphs with textual node attributes primarily relies on Graph Neural Networks (GNNs), and utilizes shallow text embedding as initial node representations, which has limitations in general knowledge and profound semantic understanding. In recent years, Large Language Models (LLMs) have been proven to possess extensive common knowledge and powerful semantic comprehension abilities that have revolutionized existing workflows to handle text data. In this talk, I will discuss pipelines to explore the potential of LLMs in graph machine learning and introduce original observations and find new insights that open new possibilities and suggest promising directions to leverage LLMs for learning on graphs. </td>
+                  <td class="tg-yw4l">4:30-5:10 PT</td>
+                  <td class="tg-yw4l">Invited Talk 2<br><font color=#00008B>Exploring the Potential of Large Language Models (LLMs) in Learning on Graphs</font> [<a style="color:#00008b;" href="slides/Jilian_LLMs-LoG.pdf" target="_blank"><b>slides</b></a>]
+                    <br>Jiliang Tang, Michigan State University<br>Learning on Graphs has attracted immense attention due to its wide real-world applications such as recommender systems. The most popular pipeline for learning on graphs with textual node attributes primarily relies on Graph Neural Networks (GNNs), and utilizes shallow text embedding as initial node representations, which has limitations in general knowledge and profound semantic understanding. In recent years, Large Language Models (LLMs) have been proven to possess extensive common knowledge and powerful semantic comprehension abilities that have revolutionized existing workflows to handle text data. In this talk, I will discuss pipelines to explore the potential of LLMs in graph machine learning and introduce original observations and find new insights that open new possibilities and suggest promising directions to leverage LLMs for learning on graphs. </td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">5:10-5:30 PT<td class="tg-yw4l">Contributed Talk 5<br><a href="meet2023.pdf">Decision Layer: Enhancing Multi-model, Multi Timescale Decisions on the Fly with Online Feedback</a>  <br>Meet Pradhuman Gandhi, Agniva Som, Suraj Satishkumar Sheth and Amrita Kumari<br>
+                  <td class="tg-yw4l">5:10-5:30 PT</td>
+                  <td class="tg-yw4l">Contributed Talk 5<br><a href="papers/meet2023.pdf">Decision Layer: Enhancing Multi-model, Multi Timescale Decisions on the Fly with Online Feedback</a>
+                   <br>Meet Pradhuman Gandhi, Agniva Som, Suraj Satishkumar Sheth and Amrita Kumari
+                    [<a style="color:#00008b;" href="#!" target="_blank">slides</a>]
+                    [<a style="color:#00008b;" href="#!" onclick='myFunction("paper_5")'><b>BibTex</a>]
+<a id="paper_5" style="display:none;white-space:pre-wrap;text-decoration:none">
+@inproceedings{kdd-oars2023_5,
+title={>Decision Layer: Enhancing Multi-model, Multi Timescale Decisions on the Fly with Online Feedback},
+author={Meet Pradhuman Gandhi, Agniva Som, Suraj Satishkumar Sheth and Amrita Kumari},
+bobooktitle={Proceedings of the 3rd International Workshop on Online and Adaptive Recommender Systems (OARS)},
+year={2023}
+}</a>
+                  </td>
                 </tr>
-            <!--
-                <tr>
-                  <td class="tg-yw4l">4:30-5:10 PT
-                  </td><td class="tg-yw4l">Posters<br> <a href="yachen2023.pdf">FLASH4Rec: A Lightweight and Sparsely Activated Transformer for User-Aware Sequential Recommendation</a>  <br> Yachen Yan and Liubo Li <br> 
-                                                  <br> <a href="verma2023.pdf">Empowering recommender systems using automatically generated Knowledge Graphs and Reinforcement Learning</a>  <br> Ghanshyam Verma, Simon Simanta, Huan Chen, Devishree Pillai, John P. McCrae, János A. Perge, Shovon Sengupta and Paul Buitelaar <br>
-                                                  <br> <a href="tushar2023.pdf">Active Learning with a Budget to Rank Candidates Rated by Disjoint Assessors</a>  <br> Tushar Phule, Pragalbh Vashishtha and Arun Rajkumar <br> 
-                                                  <br> <a href="marko2023.pdf">Evaluating Federated Session-Based Recommender Systems</a>  <br>Marko Harasic, Dennis Lehmann, Adrian Paschke and Babak Mafakheri <br>
-                                                  <br> <a href="meet2023.pdf">Decision Layer: Enhancing Multi-model, Multi Timescale Decisions on the Fly with Online Feedback</a>  <br>Meet Pradhuman Gandhi, Agniva Som, Suraj Satishkumar Sheth and Amrita Kumari<br>
-                    </td>
-                </tr>
-        
-                <tr>
-                  <td class="tg-lqy6">8:50<td class="tg-lqy6">-9:30 ET</th>
-                  </td><td class="tg-yw4l">Invited Talk 2<br> <a href="LearningUsers.pptx">Learning from a learning user: a new perspective for interactive recommendation</a>  <br> Prof. Hongning Wang, University of Virginia<br> Existing research of recommender systems relies on an overly simplified user model: users are omniscient about the item space.  However, such a static and explicit user behavior assumption appears less realistic in many modern recommendation scenarios, where the prohibitively large candidate item space prevents any individual to get the complete knowledge ahead of time. <br><br>In our recent work, we propose a refined problem setting to study the sequential interactions between a recommender system and its users. We focus on the users’ learning behaviors, where a user also has to update her utility estimation based on rewards collected from the accepted recommendations to make improved choices. We study the problem of no-regret learning on the system side. And our findings suggest the intrinsic difficulty introduced by the user’s learning behavior and the possibility of efficient online learning algorithm design for the system. This provides new insights on practical recommender system design. </td>
-                </tr>
-                <tr>
-                  <td class="tg-lqy6">9:30<td class="tg-lqy6">-10:10 ET</th>
-                  </td><td class="tg-yw4l">Invited Talk 3<br> <font color=#00008B>TorchRec: a library for modern production recommendation systems</font>  <br> Colin Taylor, Meta AI<br> Recommendation Systems (RecSys) comprise a large footprint of production-deployed AI today. For researcher and ML practitioners alike, the field is far from democratized. Further, RecSys as an area is largely defined by learning models over sparse and/or sequential events, which has large overlaps with other areas of AI. Many of the techniques are transferable, particularly for scaling and distributed execution. A large portion of the global investment in AI is in developing these RecSys techniques, so cordoning them off blocks this investment from flowing into the broader AI field.<br><br>In this talk we introduce TorchRec, a PyTorch domain library for Recommendation Systems. This new library provides efficient distributed embedding table primitives, enabling researchers to build state-of-the-art personalization models and deploy them in production. TorchRec library is currently used to train most large-scale recommender models at Meta including Ads, and Facebook and Instagram Reels. In this talk we cover how Torchrec enables scaling, optimizations for embedding lookup and compute, embedding layer optimizer fusion and production deployment.</td>
-                </tr>
-                <tr>
-                  <td class="tg-lqy6">10:10<td class="tg-lqy6">-10:50 ET</th>
-                  </td><td class="tg-yw4l">Invited Talk 4<br> <font color=#00008B>Building and Understanding Recommenders for Long-Term User Experiences</font>  <br> Alex Beutel, Google<br>How do our ML design choices align with real applications and shape user experiences? In recent years, our understanding of the objective of recommenders has evolved from making individual good predictions of user interest, to now creating positive, long-term experiences. This task of enabling positive, long-term experiences is significantly more challenging, both making clear the recommender responsibility in shaping the user experience and the difficulty in optimizing over long-term user trajectories. In this talk we'll discuss the ways in which taking this longitudinal view effects how we formulate our task, design our machine learning, and evaluate our systems. We'll discuss recent advances and challenges in adapting reinforcement learning for recommendation, and designing simulations to better understand recommender systems.</td>
-                </tr>
-
-                <tr>
-                  <td class="tg-lqy6">10:50<td class="tg-lqy6">-11:05 ET</th>
-                  </td><td class="tg-yw4l">Contributed Talk 1<br> <a href="srivas.pdf">Dynamic Memory for Interpretable Sequential Optimisation</a>  <br> Srivas Chennu, Andrew Maher, Jamie Martin and Subash Prabanantham</td>
-                </tr>
-                <tr>
-                  <td class="tg-lqy6">11:05<td class="tg-lqy6">-11:20 ET</th>
-                  </td><td class="tg-yw4l">Contributed Talk 2<br> <a href="marko.pdf">Challenges for Session-based Recommender Systems in next generation IFE-Systems</a>  <br> Marko Harasic and Adrian Paschke</td>
-                </tr>
-                <tr>
-                  <td class="tg-lqy6">11:20<td class="tg-lqy6">-11:35 ET</th>
-                  </td><td class="tg-yw4l">Contributed Talk 3<br> <a href="robin.pdf">A Performance-preserving Fairness Intervention for Adaptive Microfinance Recommendation</a>  <br> Robin Burke, Pradeep Ragothaman, Nicholas Mattei, Brian Kimmig, Amy Voida, Nasim Sonboli, Anushka Kathait and Melissa Fabros</td>
-                </tr>
-                <tr>
-                  <td class="tg-lqy6">11:35<td class="tg-lqy6">-11:50 ET</th>
-                  </td><td class="tg-yw4l">Contributed Talk 4<br> <a href="sally.pdf">Bootstrapping Interactive Recommender Systems</a>  <br> Sally Goldman, Dima Kuzmin, Steffen Rendle, Li Zhang, Moustafa Alzantot, Ajit Apte, Ajay Joshi, Anand Kesari, Santiago Ontanon, Anushya Subbiah, Martin Zinkevich, John Anderson and Sarvjeet Singh</td>
-                </tr>
-
-                <tr>
-                  <td class="tg-lqy6">11:50<td class="tg-lqy6">-12:30 ET</th>
-                  </td><td class="tg-yw4l">Posters<br> <a href="james.pdf">Photos Are All You Need for Reciprocal Recommendation in Online Dating</a>  <br> James Neve and Ryan Mcconville <br> 
-                                                  <br> <a href="edgar.pdf">Weighing Dynamic Availability and Consumption for Twitch Recommendations</a>  <br> Edgar Chen, Saad Ali, Eder Santana and Mark Ally <br>
-                                                  <br> <a href="tushar.pdf">Adaptive real-time diversification of digital content</a>  <br> Tushar Shandhilya and Nisheeth Srivastava <br> 
-                                                  <br> <a href="erik.pdf">Beyond Standard Performance Measures in Extreme Multi-label Classification</a>  <br> Erik Schultheis, Marek Wydmuch, Rohit Babbar and Krzysztof Dembczyński
-                    </td>
-                </tr>
-        -->
-
-                
-
                 </tbody></table>
               </div>
             </div>
