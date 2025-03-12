@@ -58,7 +58,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">CIKM '24 OARS Workshop</a>
+                <a class="navbar-brand page-scroll" href="#page-top">KDD '25 OARS Workshop</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -136,9 +136,9 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-preheading">The 4th International Workshop on </div>
+                <div class="intro-preheading">The 5th International Workshop on </div>
                 <div class="intro-heading">Online and Adaptive Recommender Systems</div>
-                <div class="intro-lead-in">Held in conjunction with CIKM'24 Oct 25th, 2024</div>
+                <div class="intro-lead-in">Held in conjunction with KDD'25 Aug 3rd, 2025</div>
                 <a href="#registration" class="page-scroll btn btn-xl">Register</a>
                 <br>
                 <br>
@@ -156,80 +156,43 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Introduction</h2>
                     <div class="row text-justify">
-                        <p class="large text-muted">The international workshop on Online and Adaptive Recommender Systems (OARS) will serve as a platform for publication and discussion of OARS. This workshop will bring together practitioners and researchers from academia and industry to discuss the challenges and approaches to implement OARS algorithms and systems, and improve user experiences by better modeling and responding to user intent.</p>
-                        <p class="large text-muted">Many recommender systems deployed in the real world rely on categorical user-profiles and/or pre-calculated recommendation actions that stay static during a user session. Recent trends suggest that recommender systems should model user intent in real time and constantly adapt to meet user needs at the moment or change user behavior in situ. In addition, various techniques have been proposed to help recommender systems adapt to new users, items, or behaviors. Some strategies to build “adaptive” recommenders include:</p>
+                        <p class="large text-muted">The international workshop on Online and Adaptive Recommender Systems (OARS) will serve as a platform for publication and discussion of OARS. It will bring together practitioners and researchers from academia and industry to discuss the challenges and new approaches to implement OARS algorithms and systems and improve user experiences by better modeling and responding to user intent.</p>
+                        <p class="large text-muted">Recommender system (RecSys) plays important roles in helping users navigate, discover, and consume massive and highly-dynamic information.  Today, many RecSys solutions deployed in the real world rely on categorical user profiles and/or pre-calculated recommendation actions that stay static during a user session. However, recent trends suggest that RecSys need to model user intent in real time and constantly adapt to meet user needs at the moment or change user behavior in situ. There are three primary drivers for this emerging need of online adaptation. First, in order to meet the increasing demand for a better personalized experience, the personalization dimensions and space will grow larger and larger. It would not be feasible to pre-compute recommended actions for all personalization scenarios beyond a certain scale. Second, in many settings the system does not have user prior history to leverage.  Estimating user intent in real time is the only way to personalize. As various consumer privacy laws tighten, it is foreseeable that many businesses will reduce their reliance on static user profiles. Therefore, it makes the modeling of user intent in real time an important research topic. Third, a user’s intent often changes within a session and between sessions, and user behavior could shift significantly during dramatic events. Therefore, it is important to investigate more on online and adaptive recommender systems (OARS) that can adapt in real time to meet user needs and be robust against distribution shifts.</p>
+                        <!--
                         <ul class="large text-muted">
                             <li>Systems for online training, e.g. updating the parameters of a pre-trained model to a new user.</li>        
                             <li>Feature-based systems that handle cold-start scenarios, and can gracefully adapt to a combination of cold- and warm users/items.</li>
                             <li>Systems that avoid modeling users at all (e.g. session-based recommenders that directly learn from item interactions without needing user terms)</li>
                             <li>Systems that adapt to new behaviors through RL or other adaptive learning algorithms.</li>
                         </ul>
-                        <p class="large text-muted">We invite submission of papers and posters of two to ten pages (including references), representing original research, preliminary research results, proposals for new work, position, and opinion papers. All submitted papers and posters will be single-blind and will be peer reviewed by an international program committee of researchers of high repute.  Accepted submissions will be presented at the workshop.</p>
+                        -->
+                        <p class="large text-muted">We invite submission of papers and posters, representing original research, new position and opinion, preliminary results, proposals for new tools, datasets, and resources. All submitted papers will be single-blind and will be peer reviewed by an international program committee of researchers of high repute.  Accepted submissions will be presented at the workshop.</p>
 
                         <p class="large text-muted">Topics of interest include, but are not limited to: </p>
 
                      <ul class="large text-muted">
-                          <li>Foundation and LLM models in RecSys
-                            <ul>
-                              <li>Conversational and interactive RecSys using LLMs</li>
-                              <li>Personalized agents for RecSys with LLMs</li>
-                              <li>Enhance product understanding and representation using foundation and LLM models</li>
-                              <li>Improve the generalization and relevancy of RecSys via LLM and Multi-modal foundation models</li>
-                              <li>Elevate recommendation experiences with foundation models</li>
-                              <li>Improve the explanation and reasoning of RecSys via LLMs</li>
-                              <li>Evaluation of RecSys using LLMs</li>
-                              <li>Scaling foundation and LLM models in RecSys</li>
-                              <li>Embedding evaluation for embedding, ranking, and other services</li>
-                            </ul>
-                          </li>
-                          <li>Novel algorithms and paradigms
-                            <ul>
-                              <li>online and adaptive neural recommender</li>
-                              <li>reinforcement learning (on-policy, off-policy, offline RL, and other relevant subfields)</li>
-                              <li>online/streaming learning</li>
-                              <li>interactive and conversational recommender</li>
-                              <li>extreme classification</li>
-                              <li>graph recommender</li>
-                            </ul>
-                          </li>
-                          <li>Applications
-                            <ul>
-                              <li>product recommendations</li>
-                              <li>content recommendations (news, music, movie, video, etc.)</li>
-                              <li>ads recommendations</li>
-                              <li>fashion and decor recommendation</li>
-                              <li>job recommendation</li>
-                              <li>intervention/behavior change/healthy life-style recommendations</li>
-                            </ul>
-                          </li>
-                          <li>User modeling and representations
-                            <ul>
-                              <li>implicit and explicit user intent modeling</li>
-                              <li>dynamic user intent modeling</li>
-                              <li>visual/style/taste modeling</li>
-                              <li>combination of in-session intent with long term user interest</li>
-                              <li>incorporation of knowledge graph</li>
-                              <li>representation learning</li>
-                            </ul>
-                          </li>
-                          <li>Architecture and infrastructure
-                            <ul>
-                              <li>scalability of neural methods for large scale real-time recommendations</li>
-                              <li>steaming and event-driven processing infrastructures</li>
-                            </ul>
-                          </li>
-                          <li>Evaluation and explanation methodologies
-                            <ul>
-                              <li>evaluation, comparison, explanation of OARS for a recommendation task</li>
-                              <li>off-policy and counterfactual evaluation</li>
-                            </ul>
-                          </li>
-                          <li>Social and user impact
-                            <ul>
-                              <li>UX for OARS</li>
-                              <li>welfare and objectives of OARS (CTR, dwell-time, diversity, multi-objectives, long term objectives)</li>
-                              <li>privacy and ethics considerations</li>
-                          </li>
+
+                          <li> (multi-modal) LLMs in RecSys (2025 special theme)
+                                <ul>
+                                    <li> Conversational and interactive RecSys using LLMs</li>
+                                    <li> Humanized and adaptive recommendation experiences with LLMs</li>
+                                    <li> Enhance product understanding and representation using LLMs</li>
+                                    <li> Improve the generalization and relevancy of RecSys via LLMs</li>
+                                    <li> LLM backboned RecSys</li>
+                                    <li> Improve the explanation and reasoning of RecSys via LLMs</li>
+                                    <li> Evaluation of RecSys using LLMs</li>
+                                    <li> Scaling LLMs in RecSys</li>
+                                    <li> Embedding evaluation for embedding, ranking, and other services</li>
+                                </ul>
+                        </li>
+                        
+                        <li> New algorithms and paradigms (foundation models, deep learning, reinforcement learning, online learning etc.)</li>
+                        <li> New use cases (product, content, fashion/decor, job, healthy lifestyle, interactive/conversational recommendations, etc.)</li>
+                        <li> New user modeling and representations (real-time user intent/style/taste modeling, combine with long term interest, incorporation of knowledge graph)</li>
+                        <li> New product understanding and representation methodologies</li>
+                        <li> New architecture and infrastructure (RAG and similar architectures, novel and scalable deep learning architectures, steaming and event-driven processing, etc.)</li>
+                       <li> New evaluations and explanations methods (evaluation, comparison, explanation of OARS for a recommendation task, off-policy and counterfactual evaluation, etc.)</li>
+                        <li> New social and user impact areas (UX, welfare, objectives of OARS, privacy and ethics considerations, etc.)</li>
                       </ul>
 
 <!--                      <p class="large text-muted">Although the symposium will include talks from expert faculty in the above areas, most of the workshop will primarily be <b>focused on student contributions</b>, in the form of contributed talks and posters.</p>-->
