@@ -288,7 +288,7 @@ header .intro-text .intro-lead-in
 	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-style:italic;
 	font-size:12px;
-	color: yellow;
+	color:#fff;
 	line-height:17px;
 	margin-bottom:20px
 }
@@ -299,7 +299,7 @@ header .intro-text .intro-heading
 	text-transform:uppercase;
 	font-weight:700;
 	font-size:20px;
-	color: yellow;
+	color:#fff;
 	line-height:20px;
 	margin-bottom:20px
 }
@@ -316,7 +316,7 @@ header .intro-text .intro-heading
 		font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-style:italic;
 		font-size:30px;
-		color: yellow;
+		color:#fff;
 		line-height:25px;
 		margin-bottom:20px
 	}
@@ -325,7 +325,7 @@ header .intro-text .intro-heading
 		font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
 		font-style:italic;
 		font-size:37px;
-		color: yellow;
+		color:#fff;
 		line-height:25px;
 		margin-bottom:20px
 	}
@@ -335,7 +335,7 @@ header .intro-text .intro-heading
 		text-transform:uppercase;
 		font-weight:700;
 		font-size:45px;
-		color: yellow;
+		color:#fff;
 		line-height:40px;
 		margin-bottom:20px
 	}
