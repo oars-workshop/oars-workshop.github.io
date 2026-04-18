@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>KDD OARS Workshop</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/css_002.css" rel="stylesheet" type="text/css">
+    <link href="css/css_003.css" rel="stylesheet" type="text/css">
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+    <link href="css/css_004.css" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+/*     .tg  {border-collapse:collapse;border-spacing:0; width: 350px} */
+    .tg {border-collapse:collapse;margin-left:auto;margin-right:auto;width:1240px}
+    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:12px 12px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:12px 12px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;}
+    .tg .tg-lqy6{text-align:right;vertical-align:top;white-space: nowrap}
+    .tg .tg-odj0{font-weight:bold;background-color:#ffcb2f;vertical-align:top}
+    .tg .tg-yw4l{vertical-align:top;text-align:left}
+    .tg .tg-l2oz{font-weight:bold;text-align:right;vertical-align:top}
+    .tg .tg-9hbo{font-weight:bold;vertical-align:top}
+    .tg .tg-xr8r{background-color:#ffffc7;text-align:right;vertical-align:top}
+    .tg .tg-kjho{background-color:#ffffc7;vertical-align:top}
+    </style>
+
+</head>
+
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top affix-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">KDD '25 OARS Workshop</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#introduction">Intro</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#call">CFP</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#program">Schedule</a>
+                    </li>
+                   <!--  <li>
+                        <a class="page-scroll" href="#papers">Papers</a>
+                    </li> -->
+                    <li class="">
+                        <a class="page-scroll" href="#registration">Registration</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#speakers">Speakers</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#organization">Organizers</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Past Workshops<span class="caret"></span></a>
+                        <ul class="dropdown-menu" >
+                          <li><a style="color:#777" href="./2021/index.html">OARS-2021</a></li>
+                          <li><a style="color:#777" href="./2022/index.html">OARS-2022</a></li>
+                          <li><a style="color:#777" href="./2023/index.html">OARS-2023</a></li>
+                          <li><a style="color:#777" href="./2024/index.html">OARS-2024</a></li>
+                          <!-- <li role="separator" class="divider"></li>
+                          <li class="dropdown-header">Nav header</li>
+                          <li><a href="#">Separated link</a></li>
+                          <li><a href="#">One more separated link</a></li> -->
+                        </ul>
+                    </li>
+<!--                     <li class="">
+                        <a class="page-scroll" href="./2021/index.html">OARS-2021</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="./2022/index.html">OARS-2022</a>
+                    </li>
+ -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-preheading" style="color:#fed136;text-shadow: 1px 1px 10px #000000;text-shadow: -1px -1px 10px #000000;"> The 5th International Workshop on</div>
+                <div class="intro-heading" style="color:#fed136;text-shadow: 1px 1px 10px #000000;text-shadow: -1px -1px 10px #000000;">Online and Adaptive Recommender Systems</div>
+               <div class="intro-preheading" style="color:#fed136;text-shadow: 1px 1px 10px #000000;text-shadow: -1px -1px 10px #000000;"> August 3rd, 2025</div>
+<!--                 <div class="intro-lead-in" style="color:#fed136;text-shadow: 1px 1px 10px #000000;text-shadow: -1px -1px 10px #000000;">Held in conjunction with KDD'25 August 6th, 2025</div> -->
+                <a href="#registration" class="page-scroll btn btn-xl">Register</a>
+                <br>
+                <br>
+
+                  <!-- <img src="https://counter9.stat.ovh/private/freecounterstat.php?c=aezjrca6ypuqsrqza1mkq5mwgc3f32ay" border="0" title="free counters" alt="free counters"></a> -->
+            </div>
+        </div>
+    </header> 
+
+    <a> <FONT COLOR="#000"> <center style="font-size: 18pt; color: #000" > Visits: </FONT> <img src="https://hitwebcounter.com/counter/counter.php?page=7971338&style=0005&nbdigits=6&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>
+
+    <!-- Services Section -->
+    <section id="introduction">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Introduction</h2>
+                    <div class="row text-justify">
+                        <p class="large text-muted">The international workshop on Online and Adaptive Recommender Systems (OARS) will serve as a platform for publication and discussion of OARS. It will bring together practitioners and researchers from academia and industry to discuss the challenges and new approaches to implement OARS algorithms and systems and improve user experiences by better modeling and responding to user intent.</p>
+                        <p class="large text-muted">Recommender system (RecSys) plays important roles in helping users navigate, discover, and consume massive and highly-dynamic information.  Today, many RecSys solutions deployed in the real world rely on categorical user profiles and/or pre-calculated recommendation actions that stay static during a user session. However, recent trends suggest that RecSys need to model user intent in real time and constantly adapt to meet user needs at the moment or change user behavior in situ. There are three primary drivers for this emerging need of online adaptation. First, in order to meet the increasing demand for a better personalized experience, the personalization dimensions and space will grow larger and larger. It would not be feasible to pre-compute recommended actions for all personalization scenarios beyond a certain scale. Second, in many settings the system does not have user prior history to leverage.  Estimating user intent in real time is the only way to personalize. As various consumer privacy laws tighten, it is foreseeable that many businesses will reduce their reliance on static user profiles. Therefore, it makes the modeling of user intent in real time an important research topic. Third, a user’s intent often changes within a session and between sessions, and user behavior could shift significantly during dramatic events. Therefore, it is important to investigate more on online and adaptive recommender systems (OARS) that can adapt in real time to meet user needs and be robust against distribution shifts.</p>
+                        <!--
+                        <ul class="large text-muted">
+                            <li>Systems for online training, e.g. updating the parameters of a pre-trained model to a new user.</li>        
+                            <li>Feature-based systems that handle cold-start scenarios, and can gracefully adapt to a combination of cold- and warm users/items.</li>
+                            <li>Systems that avoid modeling users at all (e.g. session-based recommenders that directly learn from item interactions without needing user terms)</li>
+                            <li>Systems that adapt to new behaviors through RL or other adaptive learning algorithms.</li>
+                        </ul>
+                        -->
+                        <p class="large text-muted">We invite submission of papers and posters, representing original research, new position and opinion, preliminary results, proposals for new tools, datasets, and resources. All submitted papers will be single-blind and will be peer reviewed by an international program committee of researchers of high repute.  Accepted submissions will be presented at the workshop.</p>
+
+                        <p class="large text-muted">Topics of interest include, but are not limited to: </p>
+
+                     <ul class="large text-muted">
+
+                          <li> (multi-modal) LLMs in RecSys (2025 special theme)
+                                <ul>
+                                    <li> Conversational and interactive RecSys using LLMs</li>
+                                    <li> Humanized and adaptive recommendation experiences with LLMs</li>
+                                    <li> Enhance product understanding and representation using LLMs</li>
+                                    <li> Improve the generalization and relevancy of RecSys via LLMs</li>
+                                    <li> LLM backboned RecSys</li>
+                                    <li> Improve the explanation and reasoning of RecSys via LLMs</li>
+                                    <li> Evaluation of RecSys using LLMs</li>
+                                    <li> Scaling LLMs in RecSys</li>
+                                    <li> Evaluation for embedding, ranking, and other services</li>
+                                </ul>
+                        </li>
+                        
+                        <li> New algorithms and paradigms (foundation models, deep learning, reinforcement learning, online learning etc.)</li>
+                        <li> New use cases (product, content, fashion/decor, job, healthy lifestyle, interactive/conversational recommendations, etc.)</li>
+                        <li> New user modeling and representations (real-time user intent/style/taste modeling, combine with long term interest, incorporation of knowledge graph)</li>
+                        <li> New product understanding and representation methodologies</li>
+                        <li> New architecture and infrastructure (RAG and similar architectures, novel and scalable deep learning architectures, steaming and event-driven processing, etc.)</li>
+                       <li> New evaluations and explanations methods (evaluation, comparison, explanation of OARS for a recommendation task, off-policy and counterfactual evaluation, etc.)</li>
+                        <li> New social and user impact areas (UX, welfare, objectives of OARS, privacy and ethics considerations, etc.)</li>
+                      </ul>
+
+<!--                      <p class="large text-muted">Although the symposium will include talks from expert faculty in the above areas, most of the workshop will primarily be <b>focused on student contributions</b>, in the form of contributed talks and posters.</p>-->
+<!--                        <p class="large text-muted">The 2016 SoCal ML symposium is sponsored by <a href="https://research.google.com/">Google Research</a>, who will provide a <b>&#36;750 prize</b> for the best presentation</p>                    -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="call" class="bg-mid-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Call for Papers</h2>
+                    <h4><p class="large text-muted"><a href="OARS CFP 2025.pdf">Download CFP</a></p></h4>
+                    <div class="row text-justify">
+                        <p class="large text-muted">All papers will be peer reviewed (single-blind) by the program committee and judged by their relevance to the workshop, especially to the main themes identified above, and their potential to generate discussion.</p>
+
+                        <p class="large text-muted">All submissions must be formatted according to the latest <a href="http://www.acm.org/publications/proceedings-template">ACM SIG proceedings template</a> (two column format). One recommended setting for Latex file of manuscript is: <a style="color:#fed136;">\documentclass[sigconf, anonymous, review]{acmart}</a>. Submissions must describe work that is not previously published, not accepted for publication elsewhere, and not currently under review elsewhere.  All submissions must be in English.</p>
+
+                        <p class="large text-muted">Please note that at least one of the authors of each accepted paper must register for the workshop and attend in person to present the paper during the workshop.</p>
+
+                        <p class="large text-muted">Submissions to the OARS workshop should be made at <a href="https://easychair.org/my/conference?conf=oarskdd2025">easychair</a> page.</p>
+                    </div>
+
+                    <h4>Key Dates</h4>
+
+                          <style>
+                            table {
+                              border-collapse: collapse;
+                              width: 40%;
+                              margin: 0px auto;
+                            }
+
+                            th, td {
+                              padding: 8px;
+                              text-align: center;
+                              border-bottom: 1px solid #7B7D7D;
+                            }
+
+                            tr:hover {background-color: #D6EEEE;}
+                          </style>
+                          <table>
+                            <tr>
+                              <!-- <th width="30%"></th> -->
+                              <th width="50%">Submissions Due</th>
+                             <th width="50%"><strike>May 8th, 2025</strike>June 1st, 2025</th>
+                               <!--<th width="50%"><strike>July 29</strike>Aug 16</th>-->
+                              <!-- <th width="30%"></th> -->
+                            </tr>
+                            <tr>
+                              <!-- <th width="30%"></th> -->
+                              <th width="50%">Notification</th>
+                              <th width="50%">June 8th, 2025</th>
+                              <!-- <th width="30%"></th> -->
+                            </tr>
+                            <tr>
+                              <!-- <th width="30%"></th> -->
+                              <th width="50%">Camera Ready Version Due</th>
+                              <th width="50%">July 6th, 2025</th>
+                              <!-- <th width="30%"></th> -->
+                            </tr>
+                            <tr>
+                              <!-- <th width="30%"></th> -->
+                              <th width="50%">Workshop Day</th>
+                              <th width="50%">August 3rd, 2025</th>
+                              <!-- <th width="30%"></th> -->
+                            </tr>
+                          </table>
+                  <br><br><h4>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3YI_T38ojMpgGQk16aMGQvyv6BggD7PM1DVWf3kDr7nMp8Q/viewform?usp=sf_link" target="_blank">Feedback and stay updated to the workshop</a></h4>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="program">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Schedule</h2>
+                    <!-- <h3 class="section-subheading text-muted">Details Will Come Soon...</h3>-->
+                </div>
+            </div>
+            <script>
+              function myFunction(id) {
+                var x = document.getElementById(id);
+                if (x.style.display === "none") {
+                  x.style.display = "block";
+                } else {
+                  x.style.display = "none";
+                }
+              }
+            </script>
+            <div class="row">
+              <div class="col-lg-12 text-left">
+                  
+                <table class="tg"><tbody>
+                <tr>
+                  <th class="tg-odj0" width="12%">Time</th>
+                  <th class="tg-odj0" width="88%">Talk</th>
+                </tr>
+                
+                <tr>
+                  <td class="tg-yw4l" width="12%">1:00-1:05 ET
+                  </td><td class="tg-yw4l">
+                      <a>Openning</a></td>
+                </tr>
+                <tr>
+                  <td class="tg-yw4l">1:05-1:50 ET</td>
+                  <td class="tg-yw4l">Invited Talk 1<br><font color=#00008B>Generative Recommenders using LLMs</font> <!-- [<a href="slides/OARS2024_cikm_workshop_Tracy.pdf" style="color:#00008b;" target="_blank">presentation</a>]  -->
+                    <br>Rein Houthooft, Netflix
+                    <br>This presentation describes an approach to building generative recommender systems at Netflix by leveraging the extensive world knowledge of Large Language Models (LLMs). We detail how ranking models can be constructed by fine-tuning base LLMs on Netflix-specific user behavior and content data, creating a system that blends general understanding with personalized interactions. Key to our method is an auxiliary output head for title entities, which improves ranking and allows for evaluation using metrics like mean reciprocal rank (MRR). We address challenges such as cold-starting via two-tower and positional-prompt approaches, and mitigate catastrophic forgetting using regularization with synthetic data, ensuring the model retains its language capabilities while excelling at ranking.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="tg-yw4l">1:50-2:05 ET</td>
+                  <td class="tg-yw4l">Spotlight 1<br><font color=#00008B>Algorithmic Harms Associated with Generative Model-Augmented Recommendation Systems</font> [<a href="papers/Herlihy2025.pdf" style="color:#00008b;" target="_blank">paper</a>]
+                    <br>Christine Herlihy, Xumei Xi, Shloka Desai, Kevin Bannerman Hutchful and Pedro Silva
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tg-yw4l">2:05-2:20 ET</td>
+                  <td class="tg-yw4l">Spotlight 2<br><font color=#00008B>Solving the Content Gap in Roblox Game Recommendations: LLM-Based Profile Generation and Reranking</font>  [<a href="papers/Wang2025.pdf" style="color:#00008b;" target="_blank">paper</a>]
+                    <br>Chen Wang, Xiaokai Wei, Yexi Jiang, Frank Ong, Kevin Gao, Xiao Yu, Zheng Hui, Se-eun Yoon, Philip Yu and Michelle Gong
+                  </td> 
+                </tr>
+                <tr>
+                  <td class="tg-yw4l">2:20-2:35 ET</td>
+                  <td class="tg-yw4l">Spotlight 3<br><font color=#00008B>Leveraging Generative AI for Automated Item Metadata: Enhancing Recommender Performance and Operational Efficiency in a Large-Scale Media Service</font>  [<a href="papers/Lee2025.pdf" style="color:#00008b;" target="_blank">paper</a>]
+                    <br>Hyeong-Bin Lee, Yeong-hwan Jeon, Min-seop Lee, Young-suk Moon, Hee-cheol Kim, Hyun-cheol Jo and Byoung-Ki Jeon
+                  </td> 
+                </tr>
+                <tr>
+                  <td class="tg-yw4l">2:35-2:50 ET</td>
+                  <td class="tg-yw4l">Spotlight 4<br><font color=#00008B>Improving Acceptance Rate for Hotel Partners’ Recommendations: Generative AI personalization, contextualization and explainability</font>  [<a href="papers/Hatt2025.pdf" style="color:#00008b;" target="_blank">paper</a>]
+                    <br>Florian Hatt, Stefano Casasso and Kirubhakaran Krishnanathan
+                  </td> 
+                </tr>
+
+                <tr>
+                  <td class="tg-yw4l">2:50-3:35 ET</td>
+                  <td class="tg-yw4l">Invited Talk 2<br><font color=#00008B>The Future of Personalized Universal Assistant</font> <!-- [<a href="slides/OARS2024_cikm_workshop_Tracy.pdf" style="color:#00008b;" target="_blank">presentation</a>]  -->
+                    <br>Ed Chi, Google Deepmind
+                    <br>We've moved way beyond the old days of building discovery, recommendation, decision support, and other AI tools using traditional ML and pattern recognition techniques. The future of universal personal assistance for discovery and learning is upon us. How will multimodality image, video, and audio understanding, and reasoning abilities of large foundation models change how we build these systems? I will shed some initial light on this topic by discussing 3 trends: First, the move to a single multimodal large model with reasoning abilities; Second, the fundamental research on personalization and user alignment; Third, the combination of System 1 and System 2 cognitive abilities into a single universal assistant.
+                  </td>
+                </tr>
+                    
+                <tr>
+                  <td class="tg-yw4l">3:35-3:50 ET</td>
+                  <td class="tg-yw4l">Spotlight 5<br><font color=#00008B>REMI: A Novel Causal Schema Memory Architecture for Personalized Lifestyle Recommendation Agents</font>  [<a href="papers/Raman2025.pdf" style="color:#00008b;" target="_blank">paper</a>]
+                    <br>Vishal Raman, Vijai Aravindh Raman and Abhijith Ragav
+                  </td> 
+                </tr>
+                    <tr>
+                  <td class="tg-yw4l">3:50-4:05 ET</td>
+                  <td class="tg-yw4l">Spotlight 6<br><font color=#00008B>Contextual Bandits in Payment Processing: Non-uniform Exploration and Supervised Learning at Adyen</font>  [<a href="papers/Vangara2025.pdf" style="color:#00008b;" target="_blank">paper</a>]
+                    <br>Alexander Egg and Akhila Vangara
+                  </td> 
+                </tr>
+                <tr>
+                  <td class="tg-yw4l">4:05-4:20 ET</td>
+                  <td class="tg-yw4l">Spotlight 7<br><font color=#00008B>GLoSS: Generative Language Models with Semantic Search for Sequential Recommendation</font>  [<a href="papers/Acharya2025.pdf" style="color:#00008b;" target="_blank">paper</a>]
+                    <br>Krishna Acharya, Aleksandr V. Petrov and Juba Ziani
+                  </td> 
+                </tr>
+<!--                 <tr>
+                  <td class="tg-yw4l">4:20-4:35 ET</td>
+                  <td class="tg-yw4l">Spotlight 8<br><font color=#00008B>RecLAIF: Reinforcement Learning from AI Feedback for Recommendation Systems</font>  [<a href="papers/He2025.pdf" style="color:#00008b;" target="_blank">paper</a>]
+                    <br>Xiaoxin He, Nurendra Choudhary, Jieyi Jiang, Edward Huang, Bryan Hooi, Xavier Bresson and Karthik Subbian
+                  </td> 
+                </tr> -->
+
+                <tr>
+                  <td class="tg-yw4l">4:20-5:05 ET</td>
+                  <td class="tg-yw4l">Invited Talk 3<br><font color=#00008B>The role of online Reinforcement Learning in a dynamic two-sided marketplace</font> <!-- [<a href="slides/OARS2024_cikm_workshop_Tracy.pdf" style="color:#00008b;" target="_blank">presentation</a>]  -->
+                    <br>Vijay Narasiman, Lyft
+                    <br>In this talk, I discuss the development and deployment of online reinforcement learning (RL) to improve the performance of Lyft's matching system. Lyft operates a complex system that matches drivers and riders in the rideshare marketplace at the scale of millions of rides per day. When demand arrives unpredictably in this two-sided marketplace, it is critical to make more efficient use of a fixed supply of drivers. I begin by describing how a basic matching system works and demonstrate how an intuitive objective like minimizing pickup times might not be optimal beyond the short term. I then explain how and why we used online RL to improve medium term outcomes while incorporating continuous feedback from the marketplace. I conclude by outlining the challenges of deploying such a system in production and the measurable impact it had on both rider and driver outcomes.
+                  </td>
+                </tr>
+<!--                 <tr>
+                  <td class="tg-yw4l">10:30-11:00 PT</td>
+                  <td class="tg-yw4l">Coffee Break</td> 
+                </tr>                
+                <tr>
+                  <td class="tg-yw4l">11:00-11:45 PT</td>
+                  <td class="tg-yw4l">Invited Talk 2<br><font color=#00008B>From Collaborative Filtering to LLMs: Building a Cutting-Edge Recommendation & Search Platform</font> [<a href="slides/OARS2024_cikm_workshop_Tullie.pdf" style="color:#00008b;" target="_blank">presentation</a>] 
+                    <br>Tullie Murrell, Shaped AI<br>This talk details Shaped's journey in developing a next-generation recommendation and search platform, tracing its evolution from traditional collaborative filtering to the adoption of powerful Large Language Models (LLMs). I'll delve into the challenges of building a multi-tenanted platform capable of serving diverse use cases at scale. Finally, I'll present future directions for generalized multi-domain RecSys, illustrating the transformative potential of large scale embedding models in shaping the next generation of recommendation and search systems.</td>
+                </tr>
+                <tr>
+                  <td class="tg-yw4l">11:45-12:30 PT</td>
+                  <td class="tg-yw4l">Invited Talk 3<br><font color=#00008B>LLMs and RecSys: From Graph Structure Knowledge to Dynamic LLMs Routing</font> [<a href="slides/OARS2024_cikm_workshop_Yanjie.pdf" style="color:#00008b;" target="_blank">presentation</a>]
+                    <br>Yanjie Fu, Arizona State University<br>Large language models (LLMs) are effective for generating personalized and explainable recommendations from user and system behavioral data.  While they excel in understanding contexts and languages, LLMs struggle with graph-structured data, which is often how user-item interactions are represented. This limits their ability to deliver accurate recommendations in complex scenarios. Additionally, given the computational cost and latency of various LLMs, recommending the most suitable LLM for queries presents a challenge. In this talk, we will firstly talk about graph structured LLM for recommendations, and then introduce MixLLM, a dynamic routing system that recommends the most suitable LLM for queries to balance among response quality, costs, and latency. Finally, we will conclude our talk and discuss future work.</td>                  
+                </tr>
+                <tr>
+                  <td class="tg-yw4l">12:30-01:45 PT</td>
+                  <td class="tg-yw4l">Lunch Break</td> 
+                </tr> 
+                <tr>
+                  <td class="tg-yw4l">01:45-02:30 PT</td>
+                  <td class="tg-yw4l">Invited Talk 3<br><font color=#00008B>Demystifying the Node-Level Recommendation Performance Variability of Graph Neural Networks</font> [<a href="slides/OARS2024_cikm_workshop_TylerDer.pdf" style="color:#00008b;" target="_blank">presentation</a>]
+                    <br>Tyler Derr, Vanderbilt University<br>The field of deep learning on graphs has seen rapid development over the recent years, where graph neural networks (GNNs) have shown great promise in recommender systems. While numerous studies aim to improve the overall recommendation performance of GNNs, fewer studies have investigated their node-level recommendation performance variability. In this talk, we aim to demystify which nodes receive better recommendation from the perspective of their local topology. Despite the widespread belief that low-degree nodes always exhibit poorer recommendation performance (e.g., recently joined users on an e-commerce platform), our empirical findings provide nuances to this viewpoint and prompt our development of a better metric, topological concentration (TC), based on the intersection of the local subgraphs of each node with the ones of its neighbors. We show that a node’s TC has stronger correlation with their recommendation quality compared to other node-level topological metrics, such as degree or subgraph density. This provides a better way to identify and understand nodes receiving poor recommendations, which has inspired an ongoing study to help in minimizing user churn for at risk users. We also discuss some of our other recent work in fairness and diversity in recommender systems and conclude with highlighting future directions.</td>
+                </tr> -->
+                <tr>
+                  <td class="tg-yw4l">5:05-5:10 ET</td>
+                  <td class="tg-yw4l">Closing</td> 
+                </tr>
+                
+                </tbody></table>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="registration" class="bg-mid-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Registration</h2>
+                    <h3 class="section-subheading text-muted">Register at <a href="https://kdd2025.kdd.org/registration/">KDD 2025</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--    <section id="attending">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-12 text-center">-->
+<!--                  <h2 class="section-heading">Attending</h2>-->
+<!-- -->
+<!--                <div>-->
+<!--                    <p class="large text-muted">Directions to the Caltech campus can be found <a href="https://www.caltech.edu/content/directions">here.</a></p>-->
+<!--                </div>-->
+
+<!--                <div class="col-lg-12 text-center">-->
+<!--                    <h4>Travel awards</h4>-->
+<!--                      <p class="large text-muted">We will be offering a number of travel awards to cover the cost of transportation and accommodation at the workshop. Please check here for further details closer to the date.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+    
+    <section id="speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Invited Speakers</h2>
+                </div>
+                <!-- <div class="col-sm-1">
+                 &nbsp;
+              </div>
+                 <div class="col-sm-1">
+                 &nbsp;
+              </div> -->
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/rein.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Rein Houthooft</h4>
+                        <p class="text-muted">Netflix Research<br>San Francisco, CA<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://reinhouthooft.github.io/" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <li><a href="https://www.linkedin.com/in/reinhouthooft/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <li><a target="_blank" href="https://scholar.google.be/citations?user=HBztuGIAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/ed.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Ed Chi</h4>
+                        <p class="text-muted">Google DeepMind<br>Mountain View, CA<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://www.edchi.net/" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <li><a href="https://www.linkedin.com/in/edchi/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <li><a target="_blank" href="https://scholar.google.com/citations?user=VuWl-KUAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/vijay.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Vijay Narasiman</h4>
+                        <p class="text-muted">Lyft<br>San Francisco, CA<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+    
+                          
+                          <li><a href="https://www.linkedin.com/in/vijay-narasiman-8b33685/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          
+                        </ul>
+                    </div>
+                </div>
+<!--<h3 class="section-subheading text-muted">Details Will Come Soon...</h3>-->
+                <!--
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/tyler.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Tyler Derr</h4>
+                        <p class="text-muted">Vanderbilt University<br>Nashville, TN<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://tylersnetwork.github.io/" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <li><a href="https://www.linkedin.com/in/tylersnetwork/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <li><a target="_blank" href="https://scholar.google.co.uk/citations?user=et6IhFcAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/tullie.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Tullie Murrell</h4>
+                        <p class="text-muted">Shaped AI<br>Brooklyn, NY<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://tulliemurrell.com/" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <li><a href="https://www.linkedin.com/in/tullie/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <li><a target="_blank" href="https://scholar.google.com/citations?user=LjjLn2YAAAAJ&hl=th"><i class="fa fa-graduation-cap"></i></a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/yanjie.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Yanjie Fu</h4>
+                        <p class="text-muted">Arizona State University<br>Phoenix, AZ<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://www.public.asu.edu/~yanjiefu/" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <li><a href="https://www.linkedin.com/in/yanjie-fu-5ba40358/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <li><a target="_blank" href="https://scholar.google.com/citations?user=OSArex4AAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/tracy.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Tracy Holloway King</h4>
+                        <p class="text-muted">Adobe<br>Mountain View, CA<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://sites.google.com/site/tracyhollowayking/" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <li><a href="https://www.linkedin.com/in/tracyhollowayking/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <li><a target="_blank" href="https://scholar.google.com/citations?user=cVua6GYAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+-->
+            </div>
+        </div>
+    </section>
+    
+    <section id="organization">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Workshop Organizers</h2>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-1">
+                 &nbsp;
+              </div>
+            <div class="row">
+              <div class="col-sm-1">
+                 &nbsp;
+              </div>
+
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/xiquan.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Xiquan Cui</h4>
+                        <p class="text-muted">The Home Depot<br>Atlanta, GA<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://www.homedepot.com" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <li><a href="https://x.com/xiquan_cui" target="_blank"><i class="fa fa-twitter"></i></a>
+                          </li>
+                          <li><a href="https://www.linkedin.com/in/xiquan-cui-崔喜泉-2486b115/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <li><a target="_blank" href="https://scholar.google.com/citations?user=OcAOpSUAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/derek.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Derek Cheng</h4>
+                        <p class="text-muted">Google<br>Mountain View, CA<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://research.google/people/zhiyuancheng/?&type=google" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <li><a href="https://x.com/infolaber" target="_blank"><i class="fa fa-twitter"></i></a>
+                          </li>
+                          <li><a href="https://www.linkedin.com/in/derekzcheng/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <li><a target="_blank" href="https://scholar.google.com/citations?user=qYYPst0AAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/fei.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Fei Liu</h4>
+                        <p class="text-muted">Emory<br>Atlanta, GA<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://www.cs.emory.edu/~fliu40/" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <li><a href="https://x.com/feiliu_nlp" target="_blank"><i class="fa fa-twitter"></i></a>
+                          </li>
+                          <li><a href="https://www.linkedin.com/in/feiliu00/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <li><a target="_blank" href="https://scholar.google.com/citations?user=22ohn6AAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+
+                                
+
+
+         <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/tao.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Tao Ye</h4>
+                        <p class="text-muted">Amazon<br>San Francisco, CA<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://www.amazon.com" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <!-- <li><a class="inactive" href="#organization"><i class="fa fa-twitter"></i></a>
+                          </li> -->
+                          <li><a href="https://www.linkedin.com/in/tao-y-50658/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <!-- <li><a class="inactive" href="#organization"><i class="fa fa-graduation-cap"></i></a>
+                          </li> -->
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-1">
+                 &nbsp;
+              </div>
+            <div class="row">
+              <div class="col-sm-1">
+                 &nbsp;
+              </div>
+            <div class="row">
+              <div class="col-sm-1">
+                 &nbsp;
+              </div>
+<!--             <div class="row">
+              <div class="col-sm-1">
+                 &nbsp;
+              </div>
+ -->
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/julian.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Julian McAuley</h4>
+                        <p class="text-muted">University of California San Diego<br>San Diego, CA</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://cseweb.ucsd.edu/~jmcauley/" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <!-- <li><a class="inactive" href="#organization"><i class="fa fa-twitter"></i></a>
+                          </li> -->
+                          <li><a href="https://www.linkedin.com/in/julianmcauley" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <li><a target="_blank" href="https://scholar.google.com/citations?user=icbo4M0AAAAJ"><i class="fa fa-graduation-cap"></i></a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/vachik.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Vachik Dave</h4>
+                        <p class="text-muted">Walmart Global Tech<br>Sunnyvale, CA<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://www.walmart.com" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <!-- <li><a class="inactive" href="#organization"><i class="fa fa-twitter"></i></a>
+                          </li> -->
+                          <li><a href="https://www.linkedin.com/in/vachik-dave/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <li><a href="https://scholar.google.com/citations?user=_9kYoTIAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="team-member">
+                        <img src="images/stephen.jpeg" class="img-responsive img-circle" alt="">
+                        <h4>Stephen Guo</h4>
+                        <p class="text-muted">Indeed<br>San Francisco, CA<br>&nbsp;</p>
+                        <ul class="list-inline social-buttons-team">
+                          <li><a href="https://www.indeed.com/" target="_blank"><i class="fa fa-home"></i></a>
+                          </li>
+                          <!-- <li><a class="inactive" href="#organization"><i class="fa fa-twitter"></i></a>
+                          </li> -->
+                          <li><a href="https://www.linkedin.com/in/stephen-guo-34515347/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                          </li>
+                          <!-- <li><a class="inactive" href="#organization"><i class="fa fa-graduation-cap"></i></a>
+                          </li> -->
+                        </ul>
+                    </div>
+                </div>
+            
+
+               
+<!--                 <div class="col-sm-1">
+                   &nbsp;
+                </div> -->
+                <div class="col-lg-12 text-center">
+                <h4>Program Committee</h4>
+                    
+                      
+                        <p> Ding Xiang, The Home Depot </p>
+                        <p> Zhankui He, Google </p>
+                        <p> Arohi Kumar, Google </p>
+                        <p> Bodhisatta Maiti, The Home Depot </p>
+                        <p> Sumeet Menon, The Home Depot </p>
+                        <p> Vivek Agrawal, Walmart </p>
+                        <p> Fei Liu, Emory </p>
+                        <p> Julian McAuley, UCSD </p>
+                   
+                    
+                </div>
+                
+                <div class="col-lg-12 text-center">
+                <h4>Contact us</h4>
+                <p class="large text-muted">Please send questions and enquiries to <a href="mailto:workshop.oars@gmail.com">workshop.oars@gmail.com</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--  <section id="Program Committee">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Program Committee</h2>
+                    <div class="row text-justify">
+                         <ul class="large text-muted">
+                            <li>Amin Javari, The Home Depot</li>
+                            <li>Thomas Packer, The Home Depot</li>        
+                            <li>Attilio Sbrana, Instituto Tecnológico de Aeronautica, ITA, Brazil</li>
+                            <li>Stephen Guo, Walmart Global Tech</li>        
+                            <li>Sumeet Menon, The Home Depot</li>
+                            <li>Chen Luo, Amazon</li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright © 2025</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+<!--                         <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li> -->
+                    </ul>
+                </div>
+<!--                <div class="col-md-4">-->
+<!--                    <ul class="list-inline quicklinks">-->
+<!--                        <li>Sponsored by<a href="https://research.google.com/"> Google</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery_002.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+
+
+
+</body></html>
