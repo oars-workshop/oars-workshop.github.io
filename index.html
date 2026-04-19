@@ -177,24 +177,28 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Introduction</h2>
                     <div class="row text-justify">
-                        <p class="large text-muted">The international workshop on Online and Adaptive Recommender Systems (OARS) will serve as a platform for publication and discussion of OARS. It will bring together practitioners and researchers from academia and industry to discuss the challenges and new approaches to implement OARS algorithms and systems and improve user experiences by better modeling and responding to user intent.</p>
                         <p class="large text-muted">Recommender systems (RecSys) play a pivotal role in helping users navigate, discover, and consume massive and ever-changing information. Yet most deployed systems still rely on static user profiles and pre-computed recommendation actions that fail to adapt within or across sessions. As personalization demands intensify, privacy regulations tighten, and user intent grows more dynamic, the need for online and adaptive recommender systems has never been greater.</p>
-                        <!--
+                        <p class="large text-muted">The OARS workshop has convened researchers and practitioners since 2021, and this edition brings it to the premier RecSys venue for the first time. OARS 2026 will explore the cutting edge of real-time personalization, with a special theme on agentic AI, LLM-powered recommenders, and tool-augmented systems. Specifically, we aim to:</p>
                         <ul class="large text-muted">
-                            <li>Systems for online training, e.g. updating the parameters of a pre-trained model to a new user.</li>        
-                            <li>Feature-based systems that handle cold-start scenarios, and can gracefully adapt to a combination of cold- and warm users/items.</li>
-                            <li>Systems that avoid modeling users at all (e.g. session-based recommenders that directly learn from item interactions without needing user terms)</li>
-                            <li>Systems that adapt to new behaviors through RL or other adaptive learning algorithms.</li>
+                            <li>Survey the landscape of online and adaptive algorithms, from reinforcement learning to in-context learning</li>
+                            <li>Highlight emerging paradigms such as semantic ID models, agentic memory, and tool-use in recommendation</li>
+                            <li>Address practical challenges including cold-start, tokenization, multi-modality, and distribution shift</li>
+                            <li>Foster cross-disciplinary exchange between academia and industry</li>
                         </ul>
-                        -->
-                        <p class="large text-muted">We invite submission of papers and posters, representing original research, new position and opinion, preliminary results, proposals for new tools, datasets, and resources. All submitted papers will be single-blind and will be peer reviewed by an international program committee of researchers of high repute.  Accepted submissions will be presented at the workshop.</p>
-                         <h3>🌟 What’s New in 2026</h3>
-                          <ul style="display:inline-block; text-align:left; font-size:16px;">
-                            <li>First time hosted at ACM RecSys</li>
-                            <li>Focus on agentic AI, memory, and tool-use</li>
+                        <h3>Why this workshop matters to the RecSys community</h3>
+                        <ul class="large text-muted">
+                            <li>Static recommendation models can no longer meet user expectations for immediacy and personalization at scale</li>
+                            <li>LLMs and foundation models are reshaping the field, yet their online adaptation and real-time integration remain open research challenges</li>
+                            <li>Industry practitioners face unique deployment constraints that academic workshops seldom address; OARS bridges this gap</li>
+                            <li>Predictive analytics and causal inference are increasingly used alongside RecSys, and this workshop will incorporate these adjacent areas</li>
+                        </ul>
+                        <h3>🌟 What’s New in 2026</h3>
+                        <ul style="display:inline-block; text-align:left; font-size:16px;">
+                            <li>First time hosted at ACM RecSys — the premier venue for recommender systems research</li>
+                            <li>Special theme on agentic AI, memory-augmented recommenders, and tool-use</li>
                             <li>Integration of LLMs with real-time recommendation</li>
-                            <li>Expanded scope: causal inference & predictive analytics</li>
-                          </ul>
+                            <li>Expanded scope: causal inference &amp; predictive analytics</li>
+                        </ul>
                         
                         <p class="large text-muted">Topics of interest include, but are not limited to: </p>
 
@@ -214,32 +218,36 @@
                               </ul>
                         -->
 
-                        <h3>Topics</h3>
-
-                            <h4>🤖 Agentic & LLM-based RecSys</h4>
-                            <ul class="large text-muted">
-                                <li>Agentic recommender systems, assistants, tool-use</li>
-                                <li>Semantic IDs, tokenization, multi-modality</li>
-                            </ul>
-                            
-                            <h4>⚡ Online Learning</h4>
-                            <ul class="large text-muted">
-                                <li>Reinforcement learning, bandits</li>
-                                <li>Continual and streaming learning</li>
-                            </ul>
-                            
-                            <h4>🧩 System Challenges</h4>
-                            <ul class="large text-muted">
-                                <li>Cold-start, sparsity, distribution shift</li>
-                                <li>Scalable infrastructure</li>
-                            </ul>
-                            
-                            <h4>📊 Evaluation & Theory</h4>
-                            <ul class="large text-muted">
-                                <li>Counterfactual evaluation</li>
-                                <li>Causal inference</li>
-                                <li>Fairness and explainability</li>
-                            </ul>
+                        <h3>Topics of Interest</h3>
+                        <p class="large text-muted">Topics include, but are not limited to:</p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4>🤖 Agentic &amp; LLM-based RecSys <span style="color:#fed136;">(2026 Special Theme)</span></h4>
+                                <ul class="large text-muted">
+                                    <li>Agentic recommender systems, assistant-style interfaces, memory and tool-use</li>
+                                    <li>LLMs and foundation models in RecSys: semantic IDs, tokenization, multi-modality, in-context learning</li>
+                                    <li>New architectures: RAG-based, streaming and event-driven, scalable learning</li>
+                                </ul>
+                                <h4>⚡ Online &amp; Adaptive Learning</h4>
+                                <ul class="large text-muted">
+                                    <li>Online and continual learning, reinforcement learning, bandits, and counterfactual evaluation</li>
+                                    <li>Real-time user intent modeling, session-aware and conversational recommendation</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4>🧩 System &amp; Practical Challenges</h4>
+                                <ul class="large text-muted">
+                                    <li>Cold-start, distribution shift, and robustness under data sparsity</li>
+                                    <li>Industry deployments, infrastructure, and real-world case studies</li>
+                                </ul>
+                                <h4>📊 Evaluation, Fairness &amp; Causal Methods</h4>
+                                <ul class="large text-muted">
+                                    <li>Evaluation, explanation, and off-policy methods for OARS</li>
+                                    <li>Predictive analytics and causal inference for recommendation</li>
+                                    <li>Privacy, ethics, fairness, and user welfare in OARS</li>
+                                </ul>
+                            </div>
+                        </div>
 
 <!--                      <p class="large text-muted">Although the symposium will include talks from expert faculty in the above areas, most of the workshop will primarily be <b>focused on student contributions</b>, in the form of contributed talks and posters.</p>-->
 <!--                        <p class="large text-muted">The 2016 SoCal ML symposium is sponsored by <a href="https://research.google.com/">Google Research</a>, who will provide a <b>&#36;750 prize</b> for the best presentation</p>                    -->
@@ -266,13 +274,19 @@
                     <h2 class="section-heading">Call for Papers</h2>
                     <h4><p class="large text-muted"><a href="OARS CFP 2026.pdf">Download CFP</a></p></h4>
                     <div class="row text-justify">
-                        <p class="large text-muted">All papers will be peer reviewed (single-blind) by the program committee and judged by their relevance to the workshop, especially to the main themes identified above, and their potential to generate discussion.</p>
+                        <p class="large text-muted">OARS 2026 solicits two types of submissions:</p>
+                        <ul class="large text-muted">
+                            <li><strong>Full workshop papers</strong>: up to 8 pages + references — reporting original research</li>
+                            <li><strong>Short/position papers</strong>: up to 4 pages + references — for position statements, preliminary results, and new ideas</li>
+                        </ul>
 
-                        <p class="large text-muted">All submissions must be formatted according to the latest <a href="http://www.acm.org/publications/proceedings-template">ACM SIG proceedings template</a> (two column format). One recommended setting for Latex file of manuscript is: <a style="color:#fed136;">\documentclass[sigconf, anonymous, review]{acmart}</a>. Submissions must describe work that is not previously published, not accepted for publication elsewhere, and not currently under review elsewhere.  All submissions must be in English.</p>
+                        <p class="large text-muted">All submissions undergo <strong>double-blind peer review</strong> by the Program Committee. Acceptance decisions are based on novelty, technical quality, relevance to OARS themes (especially agentic and real-time systems), and potential for community discussion.</p>
+
+                        <p class="large text-muted">All submissions must be formatted according to the latest <a href="http://www.acm.org/publications/proceedings-template">ACM RecSys 2026 formatting guidelines</a> (two column format). One recommended setting for Latex file of manuscript is: <a style="color:#fed136;">\documentclass[sigconf, anonymous, review]{acmart}</a>. Submissions must describe work that is not previously published, not accepted for publication elsewhere, and not currently under review elsewhere.  All submissions must be in English.</p>
 
                         <p class="large text-muted">Please note that at least one of the authors of each accepted paper must register for the workshop and attend in person to present the paper during the workshop.</p>
 
-                        <p class="large text-muted">Submissions to the OARS workshop should be made at <a href="https://easychair.org/my/conference?conf=oarskdd2026">easychair</a> page.</p>
+                        <p class="large text-muted">Submissions to the OARS workshop should be made at the <a href="https://easychair.org/my/conference?conf=oarskdd2026">EasyChair</a> page.</p>
                     </div>
 <!--
                               table {
@@ -357,118 +371,56 @@
             <div class="row">
               <div class="col-lg-12 text-left">
                   
+                <p class="large text-muted" style="text-align:center;">Tentative half-day schedule (~4 hours). Details will be updated as speakers are confirmed.</p>
                 <table class="tg"><tbody>
                 <tr>
                   <th class="tg-odj0" width="12%">Time</th>
-                  <th class="tg-odj0" width="88%">Talk</th>
-                </tr>
-                
-                <tr>
-                  <td class="tg-yw4l" width="12%">1:00-1:05 ET
-                  </td><td class="tg-yw4l">
-                      <a>Opening</a></td>
+                  <th class="tg-odj0" width="88%">Session</th>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">1:05-1:50 ET</td>
-                  <td class="tg-yw4l">Invited Talk 1<br><font color=#00008B>TBD</font> <!-- [<a href="slides/OARS2024_cikm_workshop_Tracy.pdf" style="color:#00008b;" target="_blank">presentation</a>]  -->
-                    <br>TBD
-                    <br>TBD
-                  </td>
+                  <td class="tg-yw4l" width="12%">09:00–09:10</td>
+                  <td class="tg-yw4l"><strong>Opening Remarks</strong> &amp; Workshop Overview</td>
                 </tr>
-
                 <tr>
-                  <td class="tg-yw4l">1:50-2:05 ET</td>
-                  <td class="tg-yw4l">Spotlight 1<br><font color=#00008B>TBD</font> [<a href="papers/TBD" style="color:#00008b;" target="_blank">paper</a>]
-                    <br>TBD
+                  <td class="tg-yw4l">09:10–09:50</td>
+                  <td class="tg-yw4l"><strong>Keynote 1</strong> — Invited industry speaker<br>
+                    <font color=#00008B>Agentic AI in production recommendation systems</font><br>
+                    TBD
                   </td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">2:05-2:20 ET</td>
-                  <td class="tg-yw4l">Spotlight 2<br><font color=#00008B>TBD</font>  [<a href="papers/TBD" style="color:#00008b;" target="_blank">paper</a>]
-                    <br>TBD
-                  </td> 
-                </tr>
-                <tr>
-                  <td class="tg-yw4l">2:20-2:35 ET</td>
-                  <td class="tg-yw4l">Spotlight 3<br><font color=#00008B>TBD</font>  [<a href="papers/TBD" style="color:#00008b;" target="_blank">paper</a>]
-                    <br>TBD
-                  </td> 
-                </tr>
-                <tr>
-                  <td class="tg-yw4l">2:35-2:50 ET</td>
-                  <td class="tg-yw4l">Spotlight 4<br><font color=#00008B>TBD</font>  [<a href="papers/Hatt2025.pdf" style="color:#00008b;" target="_blank">paper</a>]
-                    <br>TBD
-                  </td> 
-                </tr>
-
-                <tr>
-                  <td class="tg-yw4l">2:50-3:35 ET</td>
-                  <td class="tg-yw4l">Invited Talk 2<br><font color=#00008B>TBD</font> <!-- [<a href="slides/OARS2024_cikm_workshop_Tracy.pdf" style="color:#00008b;" target="_blank">presentation</a>]  -->
-                    <br>TBD
-                    <br>TBD
+                  <td class="tg-yw4l">09:50–10:30</td>
+                  <td class="tg-yw4l"><strong>Paper Session 1</strong> — Oral presentations (2–3 accepted papers, ~12 min each + Q&amp;A)<br>
+                    <font color=#00008B>TBD</font>
                   </td>
                 </tr>
-                    
                 <tr>
-                  <td class="tg-yw4l">3:35-3:50 ET</td>
-                  <td class="tg-yw4l">Spotlight 5<br><font color=#00008B>TBD</font>  [<a href="papers/TBD" style="color:#00008b;" target="_blank">paper</a>]
-                    <br>TBD
-                  </td> 
-                </tr>
-                    <tr>
-                  <td class="tg-yw4l">3:50-4:05 ET</td>
-                  <td class="tg-yw4l">Spotlight 6<br><font color=#00008B>TBD</font>  [<a href="papers/TBD" style="color:#00008b;" target="_blank">paper</a>]
-                    <br>TBD
-                  </td> 
+                  <td class="tg-yw4l">10:30–11:00</td>
+                  <td class="tg-yw4l"><strong>Coffee Break &amp; Poster Session</strong></td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">4:05-4:20 ET</td>
-                  <td class="tg-yw4l">Spotlight 7<br><font color=#00008B>TBD</font>  [<a href="papers/TBD" style="color:#00008b;" target="_blank">paper</a>]
-                    <br>TBD
-                  </td> 
-                </tr>
-<!--                 <tr>
-                  <td class="tg-yw4l">4:20-4:35 ET</td>
-                  <td class="tg-yw4l">Spotlight 8<br><font color=#00008B>RecLAIF: Reinforcement Learning from AI Feedback for Recommendation Systems</font>  [<a href="papers/He2025.pdf" style="color:#00008b;" target="_blank">paper</a>]
-                    <br>Xiaoxin He, Nurendra Choudhary, Jieyi Jiang, Edward Huang, Bryan Hooi, Xavier Bresson and Karthik Subbian
-                  </td> 
-                </tr> -->
-
-                <tr>
-                  <td class="tg-yw4l">4:20-5:05 ET</td>
-                  <td class="tg-yw4l">Invited Talk 3<br><font color=#00008B>TBD</font> <!-- [<a href="slides/OARS2024_cikm_workshop_Tracy.pdf" style="color:#00008b;" target="_blank">presentation</a>]  -->
-                    <br>TBD
-                    <br>TBD
+                  <td class="tg-yw4l">11:00–11:40</td>
+                  <td class="tg-yw4l"><strong>Keynote 2</strong> — Invited academic speaker<br>
+                    <font color=#00008B>LLM-based and online learning approaches to RecSys</font><br>
+                    TBD
                   </td>
                 </tr>
-<!--                 <tr>
-                  <td class="tg-yw4l">10:30-11:00 PT</td>
-                  <td class="tg-yw4l">Coffee Break</td> 
-                </tr>                
                 <tr>
-                  <td class="tg-yw4l">11:00-11:45 PT</td>
-                  <td class="tg-yw4l">Invited Talk 2<br><font color=#00008B>From Collaborative Filtering to LLMs: Building a Cutting-Edge Recommendation & Search Platform</font> [<a href="slides/OARS2024_cikm_workshop_Tullie.pdf" style="color:#00008b;" target="_blank">presentation</a>] 
-                    <br>Tullie Murrell, Shaped AI<br>This talk details Shaped's journey in developing a next-generation recommendation and search platform, tracing its evolution from traditional collaborative filtering to the adoption of powerful Large Language Models (LLMs). I'll delve into the challenges of building a multi-tenanted platform capable of serving diverse use cases at scale. Finally, I'll present future directions for generalized multi-domain RecSys, illustrating the transformative potential of large scale embedding models in shaping the next generation of recommendation and search systems.</td>
+                  <td class="tg-yw4l">11:40–12:10</td>
+                  <td class="tg-yw4l"><strong>Paper Session 2</strong> — Oral presentations (2–3 accepted papers)<br>
+                    <font color=#00008B>TBD</font>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">11:45-12:30 PT</td>
-                  <td class="tg-yw4l">Invited Talk 3<br><font color=#00008B>LLMs and RecSys: From Graph Structure Knowledge to Dynamic LLMs Routing</font> [<a href="slides/OARS2024_cikm_workshop_Yanjie.pdf" style="color:#00008b;" target="_blank">presentation</a>]
-                    <br>Yanjie Fu, Arizona State University<br>Large language models (LLMs) are effective for generating personalized and explainable recommendations from user and system behavioral data.  While they excel in understanding contexts and languages, LLMs struggle with graph-structured data, which is often how user-item interactions are represented. This limits their ability to deliver accurate recommendations in complex scenarios. Additionally, given the computational cost and latency of various LLMs, recommending the most suitable LLM for queries presents a challenge. In this talk, we will firstly talk about graph structured LLM for recommendations, and then introduce MixLLM, a dynamic routing system that recommends the most suitable LLM for queries to balance among response quality, costs, and latency. Finally, we will conclude our talk and discuss future work.</td>                  
+                  <td class="tg-yw4l">12:10–12:50</td>
+                  <td class="tg-yw4l"><strong>Panel Discussion</strong><br>
+                    <font color=#00008B>"The future of online, adaptive, and agentic recommender systems"</font>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">12:30-01:45 PT</td>
-                  <td class="tg-yw4l">Lunch Break</td> 
-                </tr> 
-                <tr>
-                  <td class="tg-yw4l">01:45-02:30 PT</td>
-                  <td class="tg-yw4l">Invited Talk 3<br><font color=#00008B>Demystifying the Node-Level Recommendation Performance Variability of Graph Neural Networks</font> [<a href="slides/OARS2024_cikm_workshop_TylerDer.pdf" style="color:#00008b;" target="_blank">presentation</a>]
-                    <br>Tyler Derr, Vanderbilt University<br>The field of deep learning on graphs has seen rapid development over the recent years, where graph neural networks (GNNs) have shown great promise in recommender systems. While numerous studies aim to improve the overall recommendation performance of GNNs, fewer studies have investigated their node-level recommendation performance variability. In this talk, we aim to demystify which nodes receive better recommendation from the perspective of their local topology. Despite the widespread belief that low-degree nodes always exhibit poorer recommendation performance (e.g., recently joined users on an e-commerce platform), our empirical findings provide nuances to this viewpoint and prompt our development of a better metric, topological concentration (TC), based on the intersection of the local subgraphs of each node with the ones of its neighbors. We show that a node’s TC has stronger correlation with their recommendation quality compared to other node-level topological metrics, such as degree or subgraph density. This provides a better way to identify and understand nodes receiving poor recommendations, which has inspired an ongoing study to help in minimizing user churn for at risk users. We also discuss some of our other recent work in fairness and diversity in recommender systems and conclude with highlighting future directions.</td>
-                </tr> -->
-                <tr>
-                  <td class="tg-yw4l">5:05-5:10 ET</td>
-                  <td class="tg-yw4l">Closing</td> 
+                  <td class="tg-yw4l">12:50–13:00</td>
+                  <td class="tg-yw4l"><strong>Closing Remarks</strong> &amp; Best Paper Award</td>
                 </tr>
-                
                 </tbody></table>
               </div>
             </div>
