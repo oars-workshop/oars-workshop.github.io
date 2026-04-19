@@ -1,0 +1,162 @@
+/* ===== Global Reset ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+  line-height: 1.65;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== Typography ===== */
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: radial-gradient(circle at 20% 20%, #4f46e5, #1e293b);
+  color: white;
+  padding: 90px 0 70px;
+  text-align: center;
+}
+
+.hero p {
+  opacity: 0.9;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  margin: 10px 8px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: white;
+  color: #1e293b;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255,255,255,0.5);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #4f46e5;
+}
+
+/* ===== Sections ===== */
+.section {
+  padding: 70px 0;
+}
+
+.section.alt {
+  background: #f8fafc;
+}
+
+/* ===== Grid ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* ===== Highlight Box ===== */
+.highlight {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #4f46e5;
+}
+
+/* ===== Timeline ===== */
+.timeline p {
+  margin: 12px 0;
+}
+
+.timeline strong {
+  color: #4f46e5;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  background: #0f172a;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.9rem;
+}
