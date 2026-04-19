@@ -1,659 +1,138 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<body>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>OARS 2026</h1>
+    <p>Online & Adaptive Recommender Systems @ RecSys 2026</p>
+    <p><strong>Agentic AI · LLMs · Real-Time Systems</strong></p>
 
-    <title>Online Adaptive Recommender System (OARS) Workshop</title>
+    <a href="#" class="btn btn-primary">Submit Paper</a>
+    <a href="#" class="btn btn-secondary">Call for Papers</a>
+  </div>
+</section>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+<!-- NAV -->
+<div class="navbar">
+  <div class="container">
+    <a href="#about">About</a>
+    <a href="#topics">Topics</a>
+    <a href="#dates">Dates</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#organizers">Organizers</a>
+  </div>
+</div>
 
-    <!-- Custom Fonts -->
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="css/css_002.css" rel="stylesheet" type="text/css">
-    <link href="css/css_003.css" rel="stylesheet" type="text/css">
-    <link href="css/css.css" rel="stylesheet" type="text/css">
-    <link href="css/css_004.css" rel="stylesheet" type="text/css">
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      OARS 2026 explores the next generation of recommender systems:
+      real-time, adaptive, and powered by LLMs and agentic workflows.
+    </p>
 
-    <!-- Theme CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+    <div class="highlight">
+      Static recommendation is no longer enough. This workshop focuses on
+      real-time adaptation, LLM-powered systems, and real-world deployment challenges.
+    </div>
+  </div>
+</section>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!-- TOPICS -->
+<section class="section alt" id="topics">
+  <div class="container">
+    <h2>Key Themes</h2>
 
-    <style type="text/css">
-/*     .tg  {border-collapse:collapse;border-spacing:0; width: 350px} */
-    .tg {border-collapse:collapse;margin-left:auto;margin-right:auto;width:1240px}
-    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:12px 12px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;}
-    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:12px 12px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;}
-    .tg .tg-lqy6{text-align:right;vertical-align:top;white-space: nowrap}
-    .tg .tg-odj0{font-weight:bold;background-color:#ffcb2f;vertical-align:top}
-    .tg .tg-yw4l{vertical-align:top;text-align:left}
-    .tg .tg-l2oz{font-weight:bold;text-align:right;vertical-align:top}
-    .tg .tg-9hbo{font-weight:bold;vertical-align:top}
-    .tg .tg-xr8r{background-color:#ffffc7;text-align:right;vertical-align:top}
-    .tg .tg-kjho{background-color:#ffffc7;vertical-align:top}
-    </style>
-
-</head>
-
-<body id="page-top" class="index">
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top affix-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">RecSys '26 OARS Workshop</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden active">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="#introduction">Overview</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="#call">Call for Papers</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="#program">Schedule</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="#registration">Registration</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="#speakers">Speakers</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="#organization">Organizers</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Past Workshops<span class="caret"></span></a>
-                        <ul class="dropdown-menu" >
-                          <li><a style="color:#777" href="./2021/index.html">OARS-2021</a></li>
-                          <li><a style="color:#777" href="./2022/index.html">OARS-2022</a></li>
-                          <li><a style="color:#777" href="./2023/index.html">OARS-2023</a></li>
-                          <li><a style="color:#777" href="./2024/index.html">OARS-2024</a></li>
-                          <li><a style="color:#777" href="./2025/index.html">OARS-2025</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(e) {
-      if (!e.target.matches('.dropbtn')) {
-      var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('show')) {
-          myDropdown.classList.remove('show');
-        }
-      }
-    }
-    </script>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading" style="color:#fed136;">
-                  Online Adaptive Recommender System (OARS) Workshop @ ACM RecSys 2026
-                </div>
-                
-                <div class="intro-lead-in" style="color:#fff; font-size:20px;">
-                  Real-time personalization · Agentic AI · LLM-powered recommendation
-                </div>
-                
-                <div class="intro-preheading" style="color:#fed136;">
-                  📍 Minneapolis, MN &nbsp;·&nbsp; September 28 – October 2, 2026
-                </div>
-                <br>
-                <a href="https://easychair.org/my/conference?conf=oarskdd2026" target="_blank" class="btn btn-xl" style="background:#fed136;color:#333;margin:6px;">Submit Paper</a>
-                <a href="#call" class="page-scroll btn btn-xl" style="background:transparent;color:#fed136;border:2px solid #fed136;margin:6px;">Call for Papers</a>
-                <a href="#registration" class="page-scroll btn btn-xl" style="background:transparent;color:#fff;border:2px solid #fff;margin:6px;">Register</a>
-            </div>
-        </div>
-    </header> 
-
-    <!-- Services Section -->
-    <section id="introduction">
-        <div class="row text-center" style="margin-top:30px;">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About the Workshop</h2>
-                    <div class="row text-justify">
-                        <p class="large text-muted">Explore the latest advances in real-time and adaptive recommender systems — from reinforcement learning to LLM-based approaches. OARS 2026 brings together researchers and practitioners at ACM RecSys for the first time, with a special focus on agentic AI, memory-augmented recommenders, and tool-use. Running since 2021 with 60–100+ attendees per edition, OARS bridges the gap between cutting-edge research and real-world deployment.</p>
-                        <h3>🌟 What’s New in 2026</h3>
-                        <ul style="display:inline-block; text-align:left; font-size:16px;">
-                            <li>First time hosted at ACM RecSys — the premier venue for recommender systems research</li>
-                            <li>Special theme on agentic AI, memory-augmented recommenders, and tool-use</li>
-                            <li>Integration of LLMs with real-time recommendation</li>
-                            <li>Expanded scope: causal inference &amp; predictive analytics</li>
-                        </ul>
-                        
-
-                        <h3>Topics of Interest</h3>
-                        <p class="large text-muted">Topics include, but are not limited to:</p>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <h4>🤖 Agentic &amp; LLM-based RecSys <span style="color:#fed136;">(2026 Special Theme)</span></h4>
-                                <ul class="large text-muted">
-                                    <li>Agentic recommender systems, assistant-style interfaces, memory and tool-use</li>
-                                    <li>LLMs and foundation models in RecSys: semantic IDs, tokenization, multi-modality, in-context learning</li>
-                                    <li>New architectures: RAG-based, streaming and event-driven, scalable learning</li>
-                                </ul>
-                                <h4>⚡ Online &amp; Adaptive Learning</h4>
-                                <ul class="large text-muted">
-                                    <li>Online and continual learning, reinforcement learning, bandits, and counterfactual evaluation</li>
-                                    <li>Real-time user intent modeling, session-aware and conversational recommendation</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6">
-                                <h4>🧩 System &amp; Practical Challenges</h4>
-                                <ul class="large text-muted">
-                                    <li>Cold-start, distribution shift, and robustness under data sparsity</li>
-                                    <li>Industry deployments, infrastructure, and real-world case studies</li>
-                                </ul>
-                                <h4>📊 Evaluation, Fairness &amp; Causal Methods</h4>
-                                <ul class="large text-muted">
-                                    <li>Evaluation, explanation, and off-policy methods for OARS</li>
-                                    <li>Predictive analytics and causal inference for recommendation</li>
-                                    <li>Privacy, ethics, fairness, and user welfare in OARS</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-light-gray">
-      <div class="container text-center">
-        <h2>Why Attend?</h2>
-        <ul style="display:inline-block; text-align:left; font-size:16px;" class="large text-muted">
-          <li>Hear from leading industry practitioners at Google DeepMind, Amazon, Lyft, and others on real-world deployment of adaptive recommender systems</li>
-          <li>Get early exposure to cutting-edge research on agentic AI, LLMs, and online learning for RecSys — the 2026 special theme</li>
-          <li>Network with an estimated 80–120 researchers and engineers in a focused half-day format</li>
-          <li>Participate in an open panel discussion: <em>"The future of online, adaptive, and agentic recommender systems"</em></li>
-          <li>Bridge academia and industry — OARS is the premier RecSys venue with this specific focus, now brought to ACM RecSys for the first time</li>
-        </ul>
+    <div class="grid">
+      <div class="card">
+        <h3>🤖 Agentic Systems</h3>
+        <p>Tool use, memory, and assistant-style recommenders.</p>
       </div>
-    </section>
-    
-    <section id="history">
-      <div class="container text-center">
-        <h2 class="section-heading">Previous Editions</h2>
-        <p class="large text-muted">OARS has been held annually at SIGKDD since 2021, growing in scope and attendance each year.</p>
-        <table style="margin:20px auto;border-collapse:collapse;font-size:16px;width:80%;">
-          <thead>
-            <tr style="background:#fed136;color:#333;">
-              <th style="padding:10px 16px;">Year</th>
-              <th style="padding:10px 16px;">Venue</th>
-              <th style="padding:10px 16px;">Special Theme</th>
-              <th style="padding:10px 16px;">Attendees</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;"><a href="./2025/index.html">OARS 2025</a></td>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;">SIGKDD</td>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;">Multi-modal LLMs in RecSys</td>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;">—</td>
-            </tr>
-            <tr style="background:#f9f9f9;">
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;"><a href="./2024/index.html">OARS 2024</a></td>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;">SIGKDD</td>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;">LLMs and generative AI for RecSys</td>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;">~100</td>
-            </tr>
-            <tr>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;"><a href="./2023/index.html">OARS 2023</a></td>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;">SIGKDD</td>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;">Foundation models and deep learning</td>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;">~90</td>
-            </tr>
-            <tr style="background:#f9f9f9;">
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;"><a href="./2022/index.html">OARS 2022</a></td>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;">SIGKDD</td>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;">Multi-arm bandits, contextual recommendation</td>
-              <td style="padding:9px 16px;border-bottom:1px solid #ddd;">~80</td>
-            </tr>
-            <tr>
-              <td style="padding:9px 16px;"><a href="./2021/index.html">OARS 2021</a></td>
-              <td style="padding:9px 16px;">SIGKDD</td>
-              <td style="padding:9px 16px;">Real-time intent modeling, online learning</td>
-              <td style="padding:9px 16px;">~60</td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div class="card">
+        <h3>🧠 LLMs</h3>
+        <p>Semantic IDs, multi-modal models, in-context learning.</p>
       </div>
-    </section>
 
-        <section id="call" class="bg-mid-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Call for Papers</h2>
-                    <p>
-                      <a href="https://easychair.org/my/conference?conf=oarskdd2026" target="_blank" class="btn btn-xl" style="background:#fed136;color:#333;margin:6px;">📄 Submit Paper</a>
-                      <a href="OARS CFP 2026.pdf" target="_blank" class="btn btn-xl" style="background:transparent;color:#333;border:2px solid #333;margin:6px;">Download CFP</a>
-                    </p>
-                    <div class="row text-justify">
-                        <p class="large text-muted">OARS 2026 solicits two types of submissions:</p>
-                        <ul class="large text-muted">
-                            <li><strong>Full workshop papers</strong>: up to 8 pages + references — reporting original research</li>
-                            <li><strong>Short/position papers</strong>: up to 4 pages + references — for position statements, preliminary results, and new ideas</li>
-                        </ul>
+      <div class="card">
+        <h3>⚡ Online Learning</h3>
+        <p>Bandits, RL, and continual adaptation.</p>
+      </div>
 
-                        <p class="large text-muted">All submissions undergo <strong>double-blind peer review</strong> by the Program Committee. Acceptance decisions are based on novelty, technical quality, relevance to OARS themes (especially agentic and real-time systems), and potential for community discussion.</p>
+      <div class="card">
+        <h3>📊 Causal Methods</h3>
+        <p>Evaluation, robustness, and counterfactuals.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                        <p class="large text-muted">All submissions must be formatted according to the latest <a href="http://www.acm.org/publications/proceedings-template">ACM RecSys 2026 formatting guidelines</a> (two column format). One recommended setting for Latex file of manuscript is: <a style="color:#fed136;">\documentclass[sigconf, anonymous, review]{acmart}</a>. Submissions must describe work that is not previously published, not accepted for publication elsewhere, and not currently under review elsewhere.  All submissions must be in English.</p>
+<!-- DATES -->
+<section class="section" id="dates">
+  <div class="container">
+    <h2>Important Dates</h2>
+    <ul>
+      <li>Submission Deadline: TBD</li>
+      <li>Notification: TBD</li>
+      <li>Workshop Date: TBD</li>
+    </ul>
+  </div>
+</section>
 
-                        <p class="large text-muted">Please note that at least one of the authors of each accepted paper must register for the workshop and attend in person to present the paper during the workshop.</p>
+<!-- SCHEDULE -->
+<section class="section alt" id="schedule">
+  <div class="container">
+    <h2>Schedule</h2>
 
-                        <p class="large text-muted">Submissions to the OARS workshop should be made at the <a href="https://easychair.org/my/conference?conf=oarskdd2026">EasyChair</a> page.</p>
-                    </div>
-                    <h3 style="color:#fed136;">📅 Important Dates</h3>
+    <div class="timeline">
+      <p><strong>09:00</strong> Opening</p>
+      <p><strong>09:10</strong> Keynote</p>
+      <p><strong>09:50</strong> Papers</p>
+      <p><strong>10:30</strong> Break</p>
+      <p><strong>11:00</strong> Keynote</p>
+      <p><strong>11:40</strong> Papers</p>
+      <p><strong>12:10</strong> Panel</p>
+    </div>
+  </div>
+</section>
 
-                          <style>
-                            
-                            table {
-                              border-collapse: collapse;
-                              width: 60%;
-                              margin: 20px auto;
-                              font-size: 16px;
-                            }
+<!-- ORGANIZERS -->
+<section class="section" id="organizers">
+  <div class="container">
+    <h2>Organizers</h2>
 
-                            th, td {
-                              padding: 8px;
-                              text-align: center;
-                              border-bottom: 1px solid #7B7D7D;
-                            }
+    <div class="grid">
+      <div class="card">
+        <strong>Xiquan Cui</strong><br>Workday
+      </div>
 
-                            tr:hover {background-color: #D6EEEE;}
-                          </style>
-                          <table>
-                            <tr>
-                              <!-- <th width="30%"></th> -->
-                              <th width="50%">Submissions Due</th>
-                             <th width="50%">July 20, 2026</th>
-                               <!--<th width="50%"><strike>July 29</strike>Aug 16</th>-->
-                              <!-- <th width="30%"></th> -->
-                            </tr>
-                            <tr>
-                              <!-- <th width="30%"></th> -->
-                              <th width="50%">Notification</th>
-                              <th width="50%">August 14, 2026</th>
-                              <!-- <th width="30%"></th> -->
-                            </tr>
-                            <tr>
-                              <!-- <th width="30%"></th> -->
-                              <th width="50%">Camera Ready Version Due</th>
-                              <th width="50%">August 28, 2026</th>
-                              <!-- <th width="30%"></th> -->
-                            </tr>
-                            <tr>
-                              <!-- <th width="30%"></th> -->
-                              <th width="50%">Workshop Day</th>
-                              <th width="50%">September 28–October 2, 2026</th>
-                              <!-- <th width="30%"></th> -->
-                            </tr>
-                          </table>
-                  <br><br><h4>
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3YI_T38ojMpgGQk16aMGQvyv6BggD7PM1DVWf3kDr7nMp8Q/viewform?usp=sf_link" target="_blank">Feedback and stay updated to the workshop</a></h4>
+      <div class="card">
+        <strong>Derek Cheng</strong><br>Google DeepMind
+      </div>
 
+      <div class="card">
+        <strong>Fei Liu</strong><br>Emory University
+      </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="card">
+        <strong>Tao Ye</strong><br>Lyft
+      </div>
 
-<section id="program">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Schedule</h2>
-                    <!-- <h3 class="section-subheading text-muted">Details Will Come Soon...</h3>-->
-                </div>
-            </div>
-            <script>
-              function myFunction(id) {
-                var x = document.getElementById(id);
-                if (x.style.display === "none") {
-                  x.style.display = "block";
-                } else {
-                  x.style.display = "none";
-                }
-              }
-            </script>
-            <div class="row">
-              <div class="col-lg-12 text-left">
-                  
-                <p class="large text-muted" style="text-align:center;">Tentative half-day schedule (~4 hours). Details will be updated as speakers are confirmed.</p>
-                <table class="tg"><tbody>
-                <tr>
-                  <th class="tg-odj0" width="12%">Time</th>
-                  <th class="tg-odj0" width="88%">Session</th>
-                </tr>
-                <tr>
-                  <td class="tg-yw4l" width="12%">09:00–09:10</td>
-                  <td class="tg-yw4l"><strong>Opening Remarks</strong> &amp; Workshop Overview</td>
-                </tr>
-                <tr>
-                  <td class="tg-yw4l">09:10–09:50</td>
-                  <td class="tg-yw4l"><strong>Keynote 1</strong> — Invited industry speaker<br>
-                    <font color=#00008B>Agentic AI in production recommendation systems</font><br>
-                    TBD
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tg-yw4l">09:50–10:30</td>
-                  <td class="tg-yw4l"><strong>Paper Session 1</strong> — Oral presentations (2–3 accepted papers, ~12 min each + Q&amp;A)<br>
-                    <font color=#00008B>TBD</font>
-                  </td>
-                </tr>
-                <tr style="background:#fffbea;">
-                  <td class="tg-yw4l">10:30–11:00</td>
-                  <td class="tg-yw4l"><strong>☕ Coffee Break &amp; Poster Session</strong></td>
-                </tr>
-                <tr>
-                  <td class="tg-yw4l">11:00–11:40</td>
-                  <td class="tg-yw4l"><strong>Keynote 2</strong> — Invited academic speaker<br>
-                    <font color=#00008B>LLM-based and online learning approaches to RecSys</font><br>
-                    TBD
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tg-yw4l">11:40–12:10</td>
-                  <td class="tg-yw4l"><strong>Paper Session 2</strong> — Oral presentations (2–3 accepted papers)<br>
-                    <font color=#00008B>TBD</font>
-                  </td>
-                </tr>
-                <tr style="background:#fffbea;">
-                  <td class="tg-yw4l">12:10–12:50</td>
-                  <td class="tg-yw4l"><strong>🎤 Panel Discussion</strong><br>
-                    <font color=#00008B>"The future of online, adaptive, and agentic recommender systems"</font>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tg-yw4l">12:50–13:00</td>
-                  <td class="tg-yw4l"><strong>Closing Remarks</strong> &amp; Best Paper Award</td>
-                </tr>
-                </tbody></table>
-              </div>
-            </div>
-        </div>
-    </section>
+      <div class="card">
+        <strong>Julian McAuley</strong><br>UCSD
+      </div>
 
-    <section id="registration" class="bg-mid-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Registration</h2>
-                    <h3 class="section-subheading text-muted">Register at <a href="https://recsys.acm.org/recsys26/">RecSys 2026</a></h3>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="card">
+        <strong>Stephen Guo</strong><br>Indeed
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="speakers">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Invited Speakers</h2>
-                </div>
-<h3 class="section-subheading text-muted">Details Will Come Soon...</h3>
-               
-            </div>
-        </div>
-    </section>
-    
-    <section id="organization">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Workshop Organizers</h2>
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-1">
-                 &nbsp;
-              </div>
-            <div class="row">
-              <div class="col-sm-1">
-                 &nbsp;
-              </div>
+<!-- FOOTER -->
+<div class="footer">
+  OARS Workshop · RecSys 2026 · Contact: cuixiquan@gmail.com
+</div>
 
-                <div class="col-sm-2">
-                    <div class="team-member">
-                        <img src="images/xiquan.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Xiquan Cui</h4>
-                        <p class="text-muted">
-                        Workday<br>
-                        Senior Manager, ML<br>
-                        <small>Agentic systems, RecSys, IR · Main organizer since 2021</small>
-                        </p>
-                        <ul class="list-inline social-buttons-team">
-                          <li><a href="https://www.workday.com" target="_blank"><i class="fa fa-home"></i></a>
-                          </li>
-                          <li><a href="https://x.com/xiquan_cui" target="_blank"><i class="fa fa-twitter"></i></a>
-                          </li>
-                          <li><a href="https://www.linkedin.com/in/xiquan-cui-崔喜泉-2486b115/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                          </li>
-                          <li><a target="_blank" href="https://scholar.google.com/citations?user=OcAOpSUAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
-                          </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-2">
-                    <div class="team-member">
-                        <img src="images/derek.jpeg" class="img-responsive img-circle" alt="">
-                        <h4>Derek Cheng</h4>
-                        <p class="text-muted">Google DeepMind<br><small>Gemini, DCN V2, 100+ Google product launches</small></p>
-                        <ul class="list-inline social-buttons-team">
-                          <li><a href="https://research.google/people/zhiyuancheng/?&type=google" target="_blank"><i class="fa fa-home"></i></a>
-                          </li>
-                          <li><a href="https://x.com/infolaber" target="_blank"><i class="fa fa-twitter"></i></a>
-                          </li>
-                          <li><a href="https://www.linkedin.com/in/derekzcheng/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                          </li>
-                          <li><a target="_blank" href="https://scholar.google.com/citations?user=qYYPst0AAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
-                          </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-2">
-                    <div class="team-member">
-                        <img src="images/fei.jpeg" class="img-responsive img-circle" alt="">
-                        <h4>Fei Liu</h4>
-                        <p class="text-muted">Emory University<br><small>LLM reasoning, NLG · NSF CAREER Award 2022</small></p>
-                        <ul class="list-inline social-buttons-team">
-                          <li><a href="https://www.cs.emory.edu/~fliu40/" target="_blank"><i class="fa fa-home"></i></a>
-                          </li>
-                          <li><a href="https://x.com/feiliu_nlp" target="_blank"><i class="fa fa-twitter"></i></a>
-                          </li>
-                          <li><a href="https://www.linkedin.com/in/feiliu00/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                          </li>
-                          <li><a target="_blank" href="https://scholar.google.com/citations?user=22ohn6AAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
-                          </li>
-                        </ul>
-                    </div>
-                </div>
-
-                                
-
-
-         <div class="col-sm-2">
-                    <div class="team-member">
-                        <img src="images/tao.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Tao Ye</h4>
-                        <p class="text-muted">Lyft<br><small>Gen AI · Co-founder LSRS workshop · 14 patents</small></p>
-                        <ul class="list-inline social-buttons-team">
-                          <li><a href="https://www.lyft.com" target="_blank"><i class="fa fa-home"></i></a>
-                          </li>
-                          <li><a href="https://www.linkedin.com/in/tao-y-50658/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                          </li>
-                        </ul>
-                    </div>
-                </div>
-        </div>
-        <div class="container">
-            <div class="row">
-              <div class="col-sm-1">
-                 &nbsp;
-              </div>
-            <div class="row">
-              <div class="col-sm-1">
-                 &nbsp;
-              </div>
-            <div class="row">
-              <div class="col-sm-1">
-                 &nbsp;
-              </div>
-<!--             <div class="row">
-              <div class="col-sm-1">
-                 &nbsp;
-              </div>
- -->
-                <div class="col-sm-2">
-                    <div class="team-member">
-                        <img src="images/julian.jpeg" class="img-responsive img-circle" alt="">
-                        <h4>Julian McAuley</h4>
-                        <p class="text-muted">UC San Diego<br><small>User behavior, social recommendation, large-scale consumer data</small></p>
-                        <ul class="list-inline social-buttons-team">
-                          <li><a href="https://cseweb.ucsd.edu/~jmcauley/" target="_blank"><i class="fa fa-home"></i></a>
-                          </li>
-                          <li><a href="https://www.linkedin.com/in/julianmcauley" target="_blank"><i class="fa fa-linkedin"></i></a>
-                          </li>
-                          <li><a target="_blank" href="https://scholar.google.com/citations?user=icbo4M0AAAAJ"><i class="fa fa-graduation-cap"></i></a>
-                          </li>
-                        </ul>
-                    </div>
-                </div>
-
-                 <div class="col-sm-2">
-                    <div class="team-member">
-                        <img src="images/vachik.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Vachik Dave</h4>
-                        <p class="text-muted">Walmart Global Tech<br><small>Recommender systems, computational advertising</small></p>
-                        <ul class="list-inline social-buttons-team">
-                          <li><a href="https://www.walmart.com" target="_blank"><i class="fa fa-home"></i></a>
-                          </li>
-                          <li><a href="https://www.linkedin.com/in/vachik-dave/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                          </li>
-                          <li><a href="https://scholar.google.com/citations?user=_9kYoTIAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
-                          </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-2">
-                    <div class="team-member">
-                        <img src="images/stephen.jpeg" class="img-responsive img-circle" alt="">
-                        <h4>Stephen Guo</h4>
-                        <p class="text-muted">Indeed<br><small>RecSys, IR, computational advertising · Stanford M.S./B.S.</small></p>
-                        <ul class="list-inline social-buttons-team">
-                          <li><a href="https://www.indeed.com/" target="_blank"><i class="fa fa-home"></i></a>
-                          </li>
-                          <li><a href="https://www.linkedin.com/in/stephen-guo-34515347/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                          </li>
-                        </ul>
-                    </div>
-                </div>
-            
-
-               
-<!--                 <div class="col-sm-1">
-                   &nbsp;
-                </div> -->
-                <div class="col-lg-12 text-center">
-                <h4>Program Committee</h4>
-                    
-                      
-                        <p> Ding Xiang, The Home Depot </p>
-                        <p> Zhankui He, Google </p>
-                        <p> Arohi Kumar, Google </p>
-                        <p> Bodhisatta Maiti, The Home Depot </p>
-                        <p> Sumeet Menon, The Home Depot </p>
-                        <p> Vivek Agrawal, Walmart </p>
-                        <p> Fei Liu, Emory </p>
-                        <p> Julian McAuley, UCSD </p>
-                   
-                    
-                </div>
-                
-                <div class="col-lg-12 text-center">
-                <h4>Contact us</h4>
-                <p class="large text-muted">Please send questions and enquiries to <a href="mailto:workshop.oars@gmail.com">workshop.oars@gmail.com</a>.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <span class="copyright">Copyright © 2026</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery_002.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/agency.js"></script>
-
-
-
-
-</body></html>
+</body>
